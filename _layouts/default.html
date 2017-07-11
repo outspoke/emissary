@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  </head>
+  <body>
+    <header class="primary-nav">
+      <div class="container">
+        <nav class="navbar navbar-light navbar-toggleable-sm">
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button" data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="{{ site.baseurl }}">
+            <img class="hidden-sm-down" src="{{ "/assets/img/logo-light.svg" | relative_url }}" />
+            <img class="hidden-md-up" src="{{ "/assets/img/logo-dark.svg" | relative_url }}" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    {{ content }}
+
+    <footer class="footer container">
+      <div class="row">
+
+        <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <a href="{{ site.baseurl }}">
+            <img src="{{ "/assets/img/footer-logo.svg" | relative_url }}" />
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <h6>SITEMAP</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Client Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Press</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <h6>CONTACTS</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <h6>OUR NETWORK</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marketing &amp; Advertising</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Enterprise Software</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6"></script>
+    <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,125 @@
+---
+---
+@import "bootstrap";
+
+// Global
+//-------
+body {
+  color: $text-color;
+}
+img {
+  max-width: 100%;
+}
+
+.rounded {
+  border-radius: $border-radius-base;
+}
+
+.btn {
+  border-radius: 100px;
+  border-width: 2px;
+  padding: 0.95rem 3rem;
+
+  &.btn-secondary {
+    border-color: #fff;
+    color: $brand-primary;
+    &:hover, &:focus {
+      background: #fff;
+    }
+  }
+  &.btn-outline-secondary {
+    border-color: #fff;
+    color: #fff;
+    &:hover, &:focus {
+      background: #fff;
+      color: $brand-primary;
+    }
+  }
+}
+
+// Nav
+// ---
+.primary-nav {
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 700;
+  img {
+    max-width: 125px;
+  }
+  .navbar-toggler {
+    outline: none;
+    cursor: pointer;
+  }
+}
+@include media-breakpoint-up(md) {
+  .primary-nav {
+    position: absolute;
+    width: 100%;
+    .navbar {
+      padding-top: $navbar-padding-vertical;
+      padding-bottom: $navbar-padding-vertical;
+      .nav-link, .nav-link:hover {
+        color: white;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+  .nav-item {
+    border-top: 1px solid #f2f2f2;
+  }
+}
+
+// Content
+//--------
+.hero {
+  font-size: 14px;
+  padding: 20vh 0;
+  background-color: $brand-primary;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  .btn + .btn {
+    margin-left: 1rem;
+  }
+}
+.trusted-by {
+  padding: 5% 0;
+}
+
+.features {
+  > .row {
+    margin-bottom: 8%;
+  }
+  img {
+    max-height: 250px;
+  }
+}
+
+.cta {
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.12);
+}
+
+// footer
+//-------
+.footer {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  .row {
+    border-top: 2px solid #f2f2f2;
+    padding-top: 7%;
+  }
+  .nav-item {
+    margin-top: 0.5rem;
+  }
+  .nav-link {
+    font-size: 13px;
+    color: #707070;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover, &:focus {
+      color: darken(#707070, 5%);
+    }
+  }
+}
