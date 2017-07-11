@@ -61,6 +61,9 @@ img {
       .nav-link, .nav-link:hover {
         color: white;
       }
+      .nav-item + .nav-item {
+        margin-left: 1rem;
+      }
     }
   }
 }
@@ -80,10 +83,16 @@ img {
   padding: 20vh 0;
   background-color: $brand-primary;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  .btn + .btn {
-    margin-left: 1rem;
+}
+@include media-breakpoint-up(md) {
+  .hero {
+    .btn + .btn {
+      margin-left: 1rem;
+    }
   }
 }
+
+
 .trusted-by {
   padding: 5% 0;
 }
