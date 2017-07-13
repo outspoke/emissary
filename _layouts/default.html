@@ -11,99 +11,100 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   </head>
   <body>
-    <header class="primary-nav">
-      <div class="container">
-        <nav class="navbar navbar-light navbar-toggleable-sm">
-          <button
-            class="navbar-toggler navbar-toggler-right"
-            type="button" data-toggle="collapse"
-            data-target="#navbarToggler"
-            aria-controls="navbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="site-wrap">
+      <header class="primary-nav{% if page.header == 'transparent' %} transparent{% endif %}">
+        <nav class="navbar fixed-top navbar-inverse navbar-toggleable-sm">
+          <div class="container">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button" data-toggle="collapse"
+              data-target="#navbarToggler"
+              aria-controls="navbarToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <a class="navbar-brand" href="{{ site.baseurl }}">
-            <img class="hidden-sm-down" src="{{ "/assets/img/logo-light.svg" | relative_url }}" />
-            <img class="hidden-md-up" src="{{ "/assets/img/logo-dark.svg" | relative_url }}" />
-          </a>
+            <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
+              <img src="{{ "/assets/img/logo-light.svg" | relative_url }}" />
+            </a>
 
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}{% link features.html %}">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}{% link pricing.html %}">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}{% link login.html %}">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}{% link signup.html %}">Signup</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      {{ content }}
+
+      <footer class="footer container">
+        <div class="row">
+
+          <div class="col-sm-6 col-md mb-4 mb-md-0">
+            <a href="{{ site.baseurl }}{% link index.html %}">
+              <img src="{{ "/assets/img/footer-logo.svg" | relative_url }}" />
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-md mb-4 mb-md-0">
+            <h6>SITEMAP</h6>
+            <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Client Stories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Signup</a>
+                <a class="nav-link" href="#">Press</a>
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </header>
 
-    {{ content }}
+          <div class="col-sm-6 col-md mb-4 mb-md-0">
+            <h6>CONTACTS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
 
-    <footer class="footer container">
-      <div class="row">
+          <div class="col-sm-6 col-md mb-4 mb-md-0">
+            <h6>OUR NETWORK</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Marketing &amp; Advertising</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Enterprise Software</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="col-sm-6 col-md mb-4 mb-md-0">
-          <a href="{{ site.baseurl }}">
-            <img src="{{ "/assets/img/footer-logo.svg" | relative_url }}" />
-          </a>
         </div>
-
-        <div class="col-sm-6 col-md mb-4 mb-md-0">
-          <h6>SITEMAP</h6>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Client Stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Press</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-sm-6 col-md mb-4 mb-md-0">
-          <h6>CONTACTS</h6>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-sm-6 col-md mb-4 mb-md-0">
-          <h6>OUR NETWORK</h6>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Marketing &amp; Advertising</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Enterprise Software</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6,scrollmagic@2.0.5(ScrollMagic.min.js+plugins/animation.gsap.min.js),gsap@1.19.1"></script>
     <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
