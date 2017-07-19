@@ -17,6 +17,21 @@ body {
 img {
   max-width: 100%;
 }
+.text-white {
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+}
+.btn {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+h1 {
+  letter-spacing: 1px;
+}
+h2 {
+  letter-spacing: 0.5px;
+}
 
 
 
@@ -83,14 +98,13 @@ img {
   padding-top: 7%;
 }
 .hero {
-  font-size: 14px;
   padding: 20vh 0;
   background-color: $brand-primary;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   .btn {
     border-radius: 100px;
     border-width: 2px;
-    padding: 0.95rem 3rem;
+    padding: 0.75rem 3rem;
 
     &.btn-secondary {
       border-color: #fff;
