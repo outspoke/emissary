@@ -106,7 +106,7 @@ $purple: #613d7c !default;
 // Create grayscale
 $gray-dark:                 #292b2c !default;
 $gray:                      #464a4c !default;
-$gray-light:                #636c72 !default;
+$gray-light:                #525564;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
@@ -181,8 +181,8 @@ $sizes: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:       $white !default;
-$body-color:    $gray-dark !default;
+$body-bg:       #e5ecef !default;
+$body-color:    #8a8a8a !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
 
@@ -244,34 +244,34 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif: 'montserrat', sans-serif;
+$font-family-serif:      'Roboto Slab', serif;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
+$font-family-base:       $font-family-serif;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1rem !default;
 $font-size-sm:   1rem !default;
 $font-size-xs:   1rem !default;
 
-$font-weight-normal: normal !default;
+$font-weight-normal: 300;
 $font-weight-bold: bold !default;
 
 $font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.75 !default;
+$line-height-base: 1.5 !default;
 
-$font-size-h1: 40px !default;
-$font-size-h2: 26px !default;
+$font-size-h1: 40px;
+$font-size-h2: 32px;
 $font-size-h3: 22px !default;
 $font-size-h4: 20px !default;
 $font-size-h5: 16px !default;
 $font-size-h6: 15px !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   inherit !default;
-$headings-font-weight:   700 !default;
-$headings-line-height:   1.75 !default;
-$headings-color:         inherit !default;
+$headings-font-family:   $font-family-sans-serif;
+$headings-font-weight:   400;
+$headings-line-height:   1.25 !default;
+$headings-color:         #525564 !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
@@ -318,9 +318,9 @@ $list-inline-padding: 5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          10px !default;
-$border-radius-lg:       10px !default;
-$border-radius-sm:       10px !default;
+$border-radius:          5px !default;
+$border-radius-lg:       5px !default;
+$border-radius-sm:       5px !default;
 
 $component-active-color: $white !default;
 $component-active-bg:    $brand-primary !default;
@@ -336,7 +336,7 @@ $transition-collapse:    height .35s ease !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:            .75rem !default;
+$table-cell-padding:            1rem !default;
 $table-sm-cell-padding:         .3rem !default;
 
 $table-bg:                      transparent !default;
@@ -710,7 +710,7 @@ $state-danger-border:            darken($state-danger-bg, 5%) !default;
 $card-spacer-x:            1.25rem !default;
 $card-spacer-y:            .75rem !default;
 $card-border-width:        1px !default;
-$card-border-radius:       $border-radius !default;
+$card-border-radius:       0 !default;
 $card-border-color:        rgba($black,.125) !default;
 $card-border-radius-inner: calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:              $gray-lightest !default;
