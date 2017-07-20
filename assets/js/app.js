@@ -6,7 +6,7 @@ $(document).ready(function(){
     offset: '1px'
   })
   .setTween(
-    TweenMax.to('.navbar', 0.2, {
+    TweenMax.to('.primary-nav .navbar', 0.2, {
       backgroundColor: 'rgba(194, 91, 86, 1)',
       boxShadow: '0 1px 2px rgba(0,0,0,0.1)',
       paddingTop: '15px',
