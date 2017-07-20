@@ -83,9 +83,6 @@ h2 {
       .nav-link, .nav-link:hover {
         color: white;
       }
-      .nav-item + .nav-item {
-        margin-left: 1rem;
-      }
     }
   }
 }
@@ -133,14 +130,10 @@ h2 {
   padding: 20vh 0;
   background: $brand-primary url(../img/hero-bg-faded.png) left -20px repeat;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-}
-@include media-breakpoint-up(lg) {
-  .hero {
-    background: $brand-primary;
+  .btn + .btn {
+    margin-left: 1rem;
   }
 }
-
-
 .trusted-by {
   padding: 5% 0;
 }
