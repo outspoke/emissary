@@ -4,11 +4,8 @@
 
 // Global
 //-------
-.site-wrap {
-  max-width: 1600px;
-  margin: 0 auto;
-  box-shadow: -2px 0 10px rgba(188,190,202,0.32);
-  background: #fff;
+body {
+  color: $text-color;
 }
 img {
   max-width: 100%;
@@ -30,27 +27,38 @@ h2 {
   letter-spacing: 0.5px;
 }
 
+.rounded {
+  border-radius: $border-radius-base;
+}
 
+.btn {
+  border-radius: 100px;
+  border-width: 2px;
+  padding: 0.95rem 3rem;
+
+  &.btn-secondary {
+    border-color: #fff;
+    color: $brand-primary;
+    &:hover, &:focus {
+      background: #fff;
+    }
+  }
+  &.btn-outline-secondary {
+    border-color: #fff;
+    color: #fff;
+    &:hover, &:focus {
+      background: #fff;
+      color: $brand-primary;
+    }
+  }
+}
 
 // Nav
 // ---
 .primary-nav {
   z-index: 1;
-  .navbar {
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: rgba($brand-primary, 1);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  }
-  &:not(.transparent) {
-    height: 104px;
-  }
-  &.transparent {
-    .navbar {
-      background-color: rgba($brand-primary, 0);
-      box-shadow: 0 1px 2px rgba(0,0,0,0);
-    }
-  }
+  font-size: 16px;
+  font-weight: 700;
   img {
     max-width: 125px;
   }
@@ -66,28 +74,27 @@ h2 {
   }
 }
 @include media-breakpoint-up(md) {
-  .navbar {
-    .nav-link, .nav-link:hover {
-      color: white;
-    }
-    .nav-item + .nav-item {
-      margin-left: 1rem;
+  .primary-nav {
+    position: absolute;
+    width: 100%;
+    .navbar {
+      padding-top: $navbar-padding-vertical;
+      padding-bottom: $navbar-padding-vertical;
+      .nav-link, .nav-link:hover {
+        color: white;
+      }
+      .nav-item + .nav-item {
+        margin-left: 1rem;
+      }
     }
   }
 }
 @include media-breakpoint-down(sm) {
-  .navbar {
-    padding-top: $navbar-padding-y / 2;
-    padding-bottom: $navbar-padding-y / 2;
-  }
-  .navbar .container {
-    width: 100%;
-  }
   .navbar-nav {
     padding-top: 1rem;
   }
   .nav-item {
-    border-top: 1px solid rgba(#f2f2f2, 0.25);
+    border-top: 1px solid #f2f2f2;
   }
 }
 
@@ -121,23 +128,11 @@ h2 {
 
 // Content
 //--------
-.primary-content {
-  padding-top: 7%;
-}
 .hero {
   font-size: 14px;
   padding: 20vh 0;
   background: $brand-primary url(../img/hero-bg-faded.png) left -20px repeat;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-
-  .video {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    background: url(../img/hero-bg.png) left -20px repeat;
-  }
 }
 @include media-breakpoint-up(lg) {
   .hero {
