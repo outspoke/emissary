@@ -244,34 +244,34 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: 'montserrat', sans-serif;
-$font-family-serif:      'Roboto Slab', serif;
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-serif;
+$font-family-base:       $font-family-sans-serif !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1rem !default;
 $font-size-sm:   1rem !default;
 $font-size-xs:   1rem !default;
 
-$font-weight-normal: 300;
+$font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
 
 $font-weight-base: $font-weight-normal !default;
-$line-height-base: 1.5 !default;
+$line-height-base: 1.75 !default;
 
-$font-size-h1: 40px;
-$font-size-h2: 32px;
+$font-size-h1: 40px !default;
+$font-size-h2: 26px !default;
 $font-size-h3: 22px !default;
 $font-size-h4: 20px !default;
 $font-size-h5: 16px !default;
 $font-size-h6: 15px !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   $font-family-sans-serif;
-$headings-font-weight:   400;
-$headings-line-height:   1.25 !default;
-$headings-color:         #525564 !default;
+$headings-font-family:   inherit !default;
+$headings-font-weight:   700 !default;
+$headings-line-height:   1.75 !default;
+$headings-color:         inherit !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
