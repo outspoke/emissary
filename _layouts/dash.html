@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/assets/fonts/montserrat/stylesheet.css" | relative_url }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  </head>
+  <body>
+
+    <div class="dashboard">
+      <header class="dash-header">
+      <nav class="navbar navbar-inverse navbar-toggleable-sm">
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button" data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
+            <img src="{{ "/assets/img/logo-light.svg" | relative_url }}" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      </header>
+      <div class="dash-wrap">
+        <div class="dash-main">
+          <aside class="dash-nav">
+            <div class="container-fluid">
+              <h4>Praesent facilisis</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">pulvinar dui</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">obortis hendrerit mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">senectus et</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">pulvinar dui</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">obortis hendrerit mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">senectus et</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div class="dash-content">
+            <div class="container-fluid">
+
+              {{ content }}
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="dash-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#">Link 1</a> |
+              <a href="#">Link 2</a> |
+              <a href="#">Link 3</a>
+            </div>
+            <div class="col-md-6 text-md-right">
+              Copyright &copy; 2017 Emissary.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6,scrollmagic@2.0.5(ScrollMagic.min.js+plugins/animation.gsap.min.js),gsap@1.19.1"></script>
+    <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
+
+  </body>
+</html>
