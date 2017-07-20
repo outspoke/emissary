@@ -17,7 +17,7 @@ title: Emissary
 email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   Talented job seekers bounce off your job site more often than they apply, even when they are a perfect fit. Emissary is the easiest way to engage and convert them to new hires, while managing the whole recruiting process better.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/emissary" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
