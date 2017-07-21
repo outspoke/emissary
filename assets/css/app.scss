@@ -41,19 +41,46 @@ h2 {
     max-width: 1600px;
     margin: 0 auto;
     background-color: rgba($brand-primary, 1);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   }
   &:not(.transparent) {
     height: 104px;
   }
-  &.transparent {
-    .navbar {
-      background-color: rgba($brand-primary, 0);
-      box-shadow: 0 1px 2px rgba(0,0,0,0);
-    }
-  }
   img {
     max-width: 125px;
+  }
+
+  .navbar-brand {
+    position: relative;
+  }
+
+  .logo-dark {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+  }
+
+  .navbar,
+  .logo-light,
+  .logo-dark,
+  .nav-link
+  {
+    transition: all linear 0.2s;
+  }
+
+  &.is-stuck {
+    .navbar {
+      @extend .navbar-light;
+      background: $white;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      padding-top: $navbar-padding-y / 2;
+      padding-bottom: $navbar-padding-y / 2;
+    }
+    .logo-light {
+      opacity: 0;
+    }
+    .logo-dark {
+      opacity: 1;
+    }
   }
 }
 .navbar {
@@ -61,6 +88,10 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.6px;
   font-family: $headings-font-family;
+  color: $white;
+  a {
+    color: inherit;
+  }
   .navbar-toggler {
     outline: none;
     cursor: pointer;
@@ -73,6 +104,11 @@ h2 {
     }
     .nav-item + .nav-item {
       margin-left: 1rem;
+    }
+    &.transparent {
+      .navbar {
+        background-color: rgba($brand-primary, 0);
+      }
     }
   }
 }
@@ -89,6 +125,9 @@ h2 {
   }
   .nav-item {
     border-top: 1px solid rgba(#f2f2f2, 0.25);
+  }
+  .primary-nav.is-stuck .navbar .nav-item {
+    border-top: 1px solid $gray-lighter;
   }
 }
 
