@@ -9,6 +9,7 @@
   margin: 0 auto;
   box-shadow: -2px 0 10px rgba(188,190,202,0.32);
   background: #fff;
+  border-bottom: 64px solid #525564;
 }
 img {
   max-width: 100%;
@@ -192,30 +193,10 @@ h2 {
 // Pricing
 //--------
 .pricing-table {
-  margin-top: 4rem;
+  margin-top: 2rem;
   thead {
     th {
       text-align: center;
-    }
-    .popular {
-      border-top-color: $brand-primary;
-      position: relative;
-      &:before {
-        content: 'Most Popular';
-        background: $brand-primary;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: -$table-border-width;
-        left: -$table-border-width;
-        transform: translateY(-100%);
-        color: $white;
-        border-radius: $border-radius $border-radius 0 0;
-        padding: .5rem;
-        font-family: $headings-font-family;
-        font-size: 1rem;
-        font-weight: 400;
-      }
     }
   }
 
@@ -260,16 +241,63 @@ h2 {
       vertical-align: baseline;
     }
   }
+}
+@include media-breakpoint-up(lg) {
+  .pricing-table {
+    margin-top: 4rem;
+    thead .popular {
+      border-top-color: $brand-primary;
+      position: relative;
+      &:before {
+        content: 'Most Popular';
+        background: $brand-primary;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -$table-border-width;
+        left: -$table-border-width;
+        transform: translateY(-100%);
+        color: $white;
+        border-radius: $border-radius $border-radius 0 0;
+        padding: .5rem;
+        font-family: $headings-font-family;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
 
-  .popular {
-    border-left-color: $brand-primary;
-    + td, + th {
+    .popular {
       border-left-color: $brand-primary;
+      + td, + th {
+        border-left-color: $brand-primary;
+      }
+    }
+
+    tbody tr:last-child .popular {
+      border-bottom-color: $brand-primary;
+    }
+
+    td, th {
+      display: table-cell !important;
     }
   }
 
-  tbody tr:last-child .popular {
-    border-bottom-color: $brand-primary;
+  .pricing-selector {
+    display: none;
+  }
+}
+@include media-breakpoint-down(md) {
+  .pricing-selector {
+    width: 100%;
+    .btn {
+      flex: 1 1 auto;
+    }
+  }
+  .pricing-table {
+    th:not(:first-child):not(.popular),
+    td:not(:first-child):not(.popular) {
+      display: none;
+    }
   }
 }
 
@@ -331,6 +359,27 @@ h2 {
   }
 }
 
+// Accordion
+//----------
+.accordion {
+  .card:first-child {
+    border-radius: $border-radius $border-radius 0 0;
+    overflow: hidden;
+  }
+  .card:last-child {
+    border-radius: 0 0 $border-radius $border-radius;
+    overflow: hidden;
+  }
+  overflow: hidden;
+  .card-header {
+    background: $brand-primary;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
 
 // Dashboard
 //----------
@@ -371,13 +420,6 @@ h2 {
     }
   }
 }
-// @include media-breakpoint-down(md) {
-//   .dashboard {
-//     #secondaryMenu {
-//       display: none;
-//     }
-//   }
-// }
 @include media-breakpoint-up(lg) {
   .dashboard {
     padding: 0;
@@ -424,6 +466,9 @@ h2 {
     .dash-footer {
       display: flex;
       flex: 0 0 auto;
+      p {
+        margin: 0;
+      }
     }
   }
 }

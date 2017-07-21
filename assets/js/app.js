@@ -1,4 +1,15 @@
 $(document).ready(function(){
+  // Init Bootstrap elements
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+
+  // Dynamic Pricing Table
+  $('[data-show-table-column]').click(function(){
+    var col = $(this).data('show-table-column');
+    $('.pricing-table').find('td,th').filter(':nth-child(n+2)').hide();
+    $('.pricing-table').find('td,th').filter(':nth-child(' + col + ')').show();
+  });
+
   var controller = new ScrollMagic.Controller();
 
   // Top Bar Nav BG + Shadow
