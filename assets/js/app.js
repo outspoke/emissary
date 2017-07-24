@@ -42,7 +42,7 @@ $(document).ready(function(){
   })
   .setTween(
     TweenMax.to('#homeSlider', 1, {
-      y: "-15%"
+      y: "10%"
     })
   )
   .addTo(controller);
