@@ -18,7 +18,14 @@ layout: default
     </div>
   </div>
   <div class="video hidden-md-down">
-
+    <div class="home-slider" id="homeSlider">
+      {% assign slides = site.static_files | where: "home-slide", true %}
+      {% for slide in slides %}
+        <div>
+          <figure style="background-image: url({{ slide.path | relative_url }})"></figure>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -128,9 +135,9 @@ layout: default
 
 <!-- CTA -->
 <div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col-md-10">
-      <div class="cta text-white bg-primary rounded p-5">
+  <div class="cta text-white rounded bg-primary p-5">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-right flex-md-last">
             <img id="cta-icon" class="mb-4 mb-md-0" src="{{ "/assets/img/icon-startup.svg" | relative_url }}" />

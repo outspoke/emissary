@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/jquery.slick@1.6.0(slick.css),fontawesome@4.7.0">
     <link rel="stylesheet" href="{{ "/assets/fonts/montserrat/stylesheet.css" | relative_url }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}">
@@ -29,8 +29,8 @@
             </button>
 
             <a class="navbar-brand" href="{{ site.baseurl }}{% link index.html %}">
-              <img class="logo-light" src="{{ "/assets/img/logo-light.svg" | relative_url }}" />
-              <img class="logo-dark" src="{{ "/assets/img/logo-dark.svg" | relative_url }}" />
+              <img class="logo-light" src="{{ "/assets/img/logo-light.png" | relative_url }}" />
+              <img class="logo-dark" src="{{ "/assets/img/logo-dark.png" | relative_url }}" />
             </a>
 
             <div class="collapse navbar-collapse" id="navbarToggler">
@@ -58,13 +58,13 @@
       <footer class="footer container">
         <div class="row">
 
-          <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <div class="col-sm-12 col-md mb-4 mb-md-0">
             <a href="{{ site.baseurl }}{% link index.html %}">
-              <img src="{{ "/assets/img/footer-logo.svg" | relative_url }}" />
+              <img src="{{ "/assets/img/logo-dark.png" | relative_url }}" />
             </a>
           </div>
 
-          <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <div class="col-sm-4 col-md mb-4 mb-md-0">
             <h6>SITEMAP</h6>
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -79,7 +79,7 @@
             </ul>
           </div>
 
-          <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <div class="col-sm-4 col-md mb-4 mb-md-0">
             <h6>CONTACTS</h6>
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -94,7 +94,7 @@
             </ul>
           </div>
 
-          <div class="col-sm-6 col-md mb-4 mb-md-0">
+          <div class="col-sm-4 col-md mb-4 mb-md-0">
             <h6>OUR NETWORK</h6>
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -108,9 +108,16 @@
 
         </div>
       </footer>
+      <div class="colophon">
+        <div class="container">
+          <p>
+            Copyright 2017 &copy; Emissary. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6,scrollmagic@2.0.5(ScrollMagic.min.js+plugins/animation.gsap.min.js),gsap@1.19.1"></script>
+    <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6,scrollmagic@2.0.5(ScrollMagic.min.js+plugins/animation.gsap.min.js),gsap@1.19.1,jquery.slick@1.6.0"></script>
     <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
 
   </body>

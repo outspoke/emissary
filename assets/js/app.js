@@ -3,6 +3,20 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
 
+  // Init slick slider
+  $('.home-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: true,
+    pausOnFocus: false,
+    pauseOnHover: false,
+    touchMove: false,
+    dots: false,
+    arrows: false,
+  });
+
   // Dynamic Pricing Table
   $('[data-show-table-column]').click(function(){
     var col = $(this).data('show-table-column');
@@ -10,22 +24,27 @@ $(document).ready(function(){
     $('.pricing-table').find('td,th').filter(':nth-child(' + col + ')').show();
   });
 
+  // Scroll animations
   var controller = new ScrollMagic.Controller();
 
   // Top Bar Nav BG + Shadow
   new ScrollMagic.Scene({
     offset: '1px'
   })
-  // .setTween(
-  //   TweenMax.to('.primary-nav .navbar', 0.2, {
-  //     backgroundColor: 'rgba(255, 255, 255, 1)',
-  //     boxShadow: '0 1px 2px rgba(0,0,0,0.1)',
-  //     paddingTop: '15px',
-  //     paddingBottom: '15px',
-  //     color: '#525564'
-  //   })
-  // )
   .setClassToggle('.primary-nav', 'is-stuck')
+  .addTo(controller);
+
+  // Paralaxify the header
+  new ScrollMagic.Scene({
+    triggerElement: '#homeSlider',
+    triggerHook: 0,
+    duration: $('#homeSlider').height(),
+  })
+  .setTween(
+    TweenMax.to('#homeSlider', 1, {
+      y: "-15%"
+    })
+  )
   .addTo(controller);
 
   // Icon 1

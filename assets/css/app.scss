@@ -8,8 +8,7 @@
   max-width: 1600px;
   margin: 0 auto;
   box-shadow: -2px 0 10px rgba(188,190,202,0.32);
-  background: #fff;
-  border-bottom: 64px solid #525564;
+  background: #fff url('../img/paper-bg.jpg');
 }
 img {
   max-width: 100%;
@@ -45,9 +44,6 @@ h2 {
   &:not(.transparent) {
     height: 104px;
   }
-  img {
-    max-width: 125px;
-  }
 
   .navbar-brand {
     position: relative;
@@ -57,6 +53,10 @@ h2 {
     position: absolute;
     opacity: 0;
     left: 0;
+  }
+
+  &.transparent .navbar {
+    background-color: rgba($brand-primary, 0);
   }
 
   .navbar,
@@ -85,10 +85,13 @@ h2 {
 }
 .navbar {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.6px;
   font-family: $headings-font-family;
   color: $white;
+  img {
+    max-width: 125px;
+  }
   a {
     color: inherit;
   }
@@ -104,11 +107,6 @@ h2 {
     }
     .nav-item + .nav-item {
       margin-left: 1rem;
-    }
-    &.transparent {
-      .navbar {
-        background-color: rgba($brand-primary, 0);
-      }
     }
   }
 }
@@ -166,8 +164,11 @@ h2 {
 }
 .hero {
   padding: 20vh 0;
-  background: $brand-primary url(../img/hero-bg-faded.png) left -20px repeat;
+  background: url(../img/hero-bg-mobile.png),
+              linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
+  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
 
   .video {
     position: absolute;
@@ -175,12 +176,31 @@ h2 {
     top: 0;
     bottom: 0;
     left: 50%;
-    background: url(../img/hero-bg.png) left -20px repeat;
+  }
+
+  .home-slider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    div {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin: 0;
+    }
   }
 }
 @include media-breakpoint-up(lg) {
   .hero {
-    background: $brand-primary;
+    background: linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
   }
 }
 
@@ -193,7 +213,8 @@ h2 {
   margin-bottom: 10%;
   hr {
     margin: 6% 0;
-    border-color: $gray-lightest;
+    border-color: $gray-lighter;
+    border-width: 2px;
   }
   img {
     max-height: 250px;
@@ -203,6 +224,7 @@ h2 {
 .cta {
   box-shadow: 0 24px 40px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
+  background: linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 85%);
 }
 
 // footer
@@ -210,6 +232,9 @@ h2 {
 .footer {
   padding-top: 7%;
   padding-bottom: 7%;
+  img {
+    max-width: 200px;
+  }
   .row {
     border-top: 2px solid #f2f2f2;
     padding-top: 7%;
@@ -218,12 +243,29 @@ h2 {
     margin-top: 0.5rem;
   }
   .nav-link {
-    font-size: 13px;
     color: #707070;
     padding-left: 0;
     padding-right: 0;
     &:hover, &:focus {
       color: darken(#707070, 5%);
+    }
+  }
+}
+
+.colophon {
+  background: #525564;
+  color: white;
+  font-size: 85%;
+  padding: 2rem 0;
+  a {
+    color: white;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .colophon {
+    p {
+      margin: 0;
     }
   }
 }
