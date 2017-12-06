@@ -557,11 +557,13 @@ h2 {
 
 .product {
   // padding: 2vw;
-  max-width: 850px;
+  // max-width: 850px;
   margin:0 auto;
   // font-size: 1.5rem;
 }
 .section {
+  max-width: 850px;
+  margin: 0 auto;
   padding: 1em 0;
 }
 .product-logo {
@@ -574,7 +576,7 @@ h2 {
 .centered-headline {
   text-align: center;
   font-weight: 500;
-  padding: 0 0 1.5rem;
+  padding: 0 0 0.25rem;
 }
 .subheading {
   color: #928F9D;
@@ -583,14 +585,35 @@ h2 {
   padding: 0.5rem 0;
 }
 .callout-headline {
-  background: #CC6666;
-  color: #fff;
+  // background: #CC6666;
+  color: #928f9d;
   font-weight: 300;
   // font-size: 26px;
-  padding: 4vh 6vw;
+  padding: 0 6vw 4vh;
   border-radius: 1em;
   text-align: center;
 }
+.overline {
+  color: rgba(#928f9d, 0);
+  animation-name: overlineTextIn;
+  animation-duration: 1800ms;
+  animation-fill-mode: forwards;
+  animation-delay: 750ms;
+  &::before {
+    content: '';
+    display: block;
+    background: #928f9d5e;
+    width: 0%;
+    height: 2px;
+    border-radius: 10px;
+    margin: 0 auto 1rem;
+    animation-name: overlineIn;
+    animation-delay: 250ms;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+  }
+}
+
 .product-intro {
   display: grid;
   grid-template-columns: 1fr;
@@ -646,10 +669,30 @@ h2 {
   }
   .callout-headline {
     // font-size: 36px;
-    padding: 1.5rem 2rem;
+    padding: 0rem 2rem 2rem;
     margin: 0 0 2rem;
   }
   .steps ol {
     white-space: nowrap;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1800ms;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes overlineIn {
+  0% { opacity: 0; width: 0%; }
+  100% { opacity: 1; width: 100%; }
+}
+@keyframes overlineTextIn {
+  0% { color: rgba(#928f9d, 0); }
+  100% { color: rgba(#928f9d, 1); }
 }
