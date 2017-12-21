@@ -761,7 +761,8 @@ h3.callout-headline {
 }
 
 
-.text-retargeting-primary-content {
+.text-retargeting-primary-content,
+.managed-chat-primary-content {
   margin-bottom: 4em;
   h1,h2,h3,h4,h5,h6 {
     br {
@@ -835,7 +836,7 @@ h3.callout-headline {
       }
       .step-text {
         margin-left: 10%;
-        margin-top: 10%;
+        margin-top: 12%;
       }
       &.step-1 { background-image:url('{{ "/assets/img/products/text-retargeting/icon-1-fill.svg" | relative_url }}'); }
       &.step-2 { background-image:url('{{ "/assets/img/products/text-retargeting/icon-2-fill.svg" | relative_url }}'); }
