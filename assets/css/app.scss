@@ -756,7 +756,9 @@ h3.callout-headline {
 
 
 
-
+.text-red {
+  color: #CC6666;
+}
 
 
 .text-retargeting-primary-content {
@@ -801,14 +803,14 @@ h3.callout-headline {
     }
   }
   .step-num {
-    width: 60px;
+    width: 90px;
     margin-bottom: 0.5rem;
   }
   .step-info {
     padding: 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
+    // margin: 0 auto;
     @media screen and (max-width: 992px) {
       padding: 0;
     }
@@ -851,6 +853,10 @@ h3.callout-headline {
         }
       }
     }
+  }
+  .centered-list {
+    margin: 0 auto;
+    width: 450px;
   }
 }
 
