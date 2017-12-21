@@ -790,6 +790,9 @@ h3.callout-headline {
   }
   .step-text {
     width: auto;
+    @media screen and (max-width: 450px) {
+      width: auto !important;
+    }
     @media screen and (max-width: 768px) {
       width: 420px;
     }
