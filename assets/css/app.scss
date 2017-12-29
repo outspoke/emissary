@@ -926,3 +926,42 @@ h3.callout-headline {
 .cta.bg-dark {
   background: linear-gradient(to bottom, #525564 5%, darken(#525564, 10%) 85%);
 }
+
+.step-arrow-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  &-img {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0px 5px -2px rgba(0, 0, 0, 0.25), 0 2px 5px -2px rgba(0,0,0,0.25), 0 3px 9px -4px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(2px);
+    transform-origin: center;
+    transition: box-shadow 300ms ease-in-out, opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    cursor: pointer;
+    img {
+      max-width: 40px;
+      margin: 0;
+      padding: 0;
+      opacity: 0.5;
+      transition: opacity 300ms ease-in-out;
+    }
+    &:hover {
+      box-shadow: 0 0px 5px -2px rgba(0, 0, 0, 0.25), 0 6px 10px -2px rgba(0,0,0,0.125), 0 9px 16px -4px rgba(0,0,0,0.125);
+      transform: translateY(0);
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -125,4 +125,93 @@ $(document).ready(function(){
     })
   )
   .addTo(controller);
+
+  // Text Retargeting Page
+  if ($('.text-retargeting-primary-content').length >= 1) {
+    $('.steps > .step').each(function() {
+      var $step = $(this);
+      var $stepText = $step.find('.step-text');
+      var $stepNumIcon = $step.find('.bg-icon');
+      var $stepImg = $step.find('.step-image img');
+
+      new ScrollMagic.Scene({
+        triggerElement: $step[0],
+        triggerHook: 0.75,
+        offset: 50
+      })
+      .setTween(
+        TweenMax.from($stepText, 0.5, {
+          opacity: 0,
+          y: "-5%"
+        })
+      )
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: $stepImg[0],
+        triggerHook: 0.75,
+        offset: 0
+      })
+      .setTween(
+        TweenMax.from($stepImg, 0.5, {
+          opacity: 0,
+          scale: "0.9"
+        })
+      )
+      .addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: $stepNumIcon[0],
+        triggerHook: 0.75,
+        offset: 50
+      })
+      .setTween(
+        TweenMax.from($stepNumIcon[0], 0.5, {
+          backgroundPosition: "0 80%"
+        })
+      )
+      .addTo(controller);
+    });
+
+    // smooth scroll
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top - 100
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });
+
+
+  }
+  
 });
