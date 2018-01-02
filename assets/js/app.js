@@ -126,8 +126,8 @@ $(document).ready(function(){
   )
   .addTo(controller);
 
-  // Text Retargeting Page
-  if ($('.text-retargeting-primary-content').length >= 1) {
+  // Product Pages
+  if ($('.text-retargeting-primary-content, .managed-chat-primary-content').length >= 1) {
     $('.steps > .step').each(function() {
       var $step = $(this);
       var $stepText = $step.find('.step-text');
@@ -137,7 +137,7 @@ $(document).ready(function(){
       new ScrollMagic.Scene({
         triggerElement: $step[0],
         triggerHook: 0.75,
-        offset: 50
+        offset: -100
       })
       .setTween(
         TweenMax.from($stepText, 0.5, {
@@ -150,7 +150,7 @@ $(document).ready(function(){
       new ScrollMagic.Scene({
         triggerElement: $stepImg[0],
         triggerHook: 0.75,
-        offset: 0
+        offset: -100
       })
       .setTween(
         TweenMax.from($stepImg, 0.5, {
