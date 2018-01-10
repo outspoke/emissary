@@ -34,12 +34,15 @@
               <img class="logo-dark" src="{{ "/assets/img/logo-dark.png" | relative_url }}" />
             </a>
 
-            <!-- <div class="collapse navbar-collapse" id="navbarToggler">
+            <div class="collapse navbar-collapse" id="navbarToggler">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ site.baseurl }}{% link features.html %}">Features</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{{ site.baseurl }}{% link text-retargeting.html %}">Text Retargeting</a>
+                  </div>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="{{ site.baseurl }}{% link pricing.html %}">Pricing</a>
                 </li>
                 <li class="nav-item">
@@ -47,9 +50,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ site.baseurl }}{% link signup.html %}">Signup</a>
-                </li>
+                </li> -->
               </ul>
-            </div> -->
+            </div>
           </div>
         </nav>
       </header>
