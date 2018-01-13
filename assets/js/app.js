@@ -222,15 +222,11 @@ $(document).ready(function(){
       // rocket ship animation
       var rocketShipImageAnim = new TimelineMax()
       rocketShipImageAnim
-        .to('#ship', 1.5, {
+        .to('#ship', 0.5, {
           y: '15px'
         })
-        .to('#smoke', 1.5, {
-          y: '-0.98'
-        }, '-=0.5');
       new ScrollMagic.Scene({
-        triggerElement: '#rocket-image', 
-        triggerHook: 0.75,
+        triggerElement: '#step-3', 
         offset: 100
       })
       .setTween(rocketShipImageAnim)
@@ -239,13 +235,10 @@ $(document).ready(function(){
       var rocketSmokeImageAnim = new TimelineMax({ repeat: -1 })
       rocketSmokeImageAnim
         .to('#smoke', 0.5, {
-          y: '2px'
-        })
-        .to('#smoke', 0.5, {
           y: '-0.96'
-        }, '-=0.5');
+        });
       new ScrollMagic.Scene({
-        triggerElement: '#rocket-image', 
+        triggerElement: '#ship', 
         triggerHook: 0.75,
         offset: 100
       })
@@ -261,13 +254,12 @@ $(document).ready(function(){
           y: '-0.96'
         }, '-=0.5');
       new ScrollMagic.Scene({
-        triggerElement: '#stars', 
+        triggerElement: '#ship', 
         triggerHook: 0.75,
         offset: 50
       })
       .setTween(rocketstarsImageAnim)
       .addTo(controller);
-
 
     });
     
