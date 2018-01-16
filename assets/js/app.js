@@ -159,19 +159,6 @@ $(document).ready(function(){
       )
       .addTo(controller);
 
-      new ScrollMagic.Scene({
-        triggerElement: $stepNumIcon[0],
-        triggerHook: 0.75,
-        offset: 50
-      })
-      .setTween(
-        TweenMax.from($stepNumIcon[0], 0.5, {
-          backgroundPosition: "0 80%"
-        })
-      )
-      .addTo(controller);
-
-
       // desktop modal animation
       var screenshotImageAnim = new TimelineMax()
       screenshotImageAnim

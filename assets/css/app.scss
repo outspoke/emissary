@@ -861,6 +861,12 @@ h3.callout-headline {
     @media screen and (max-width: 390px) {
       min-width: initial;
     }
+    
+    @media screen and (max-width: 414px) {
+      > svg {
+        max-width: 100%;
+      }
+    }
 
     @media screen and (min-width: 1200px) {
       width: 450px;
@@ -891,6 +897,18 @@ h3.callout-headline {
     @media only screen and (min-width: 992px) {
       margin: 0 auto;
       width: 450px;
+    }
+  }
+  #step-3 {
+    .step-img > svg {
+      max-width: 100%;
+    }
+  }
+  @media only screen and (min-width: 450px) {
+    #step-3 {
+      .step-img > svg {
+        max-width: 306px;
+      }
     }
   }
 }
