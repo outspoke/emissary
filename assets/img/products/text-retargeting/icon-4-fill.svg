@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.2 56.2"><defs><style>.cls-1{opacity:0.15;}.cls-2{fill:#525565;}.cls-3{fill:none;}.cls-4{isolation:isolate;font-size:40px;fill:#fff;font-family:RobotoSlab-Bold, Roboto Slab;font-weight:700;}</style></defs><title>Asset 4</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-1"><circle class="cls-2" cx="28.1" cy="28.1" r="28.1"/><path class="cls-3" d="M10.6,12.2h35V45.7h-35Z"/><text class="cls-4" transform="translate(15.96 41.87)">4</text></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="57px" viewBox="0 0 57 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-4-fill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+        <g id="icon-4-fill" transform="translate(0.000000, -1.000000)">
+            <g id="Group">
+                <circle id="Oval" fill="#525565" fill-rule="nonzero" cx="28.1" cy="29.1" r="28.1"></circle>
+                <polygon id="Shape" points="10.6 13.2 45.6 13.2 45.6 46.7 10.6 46.7"></polygon>
+                <path d="M34.2217188,32.2840625 L37.444375,32.2840625 L37.444375,36.073125 L34.2217188,36.073125 L34.2217188,38.8660937 L37.2490625,39.4520312 L37.2490625,42.87 L25.49125,42.87 L25.49125,39.4520312 L28.538125,38.8660937 L28.538125,36.073125 L16.9365625,36.073125 L16.663125,33.2801562 L28.4795313,14.4325 L34.2217188,14.4325 L34.2217188,32.2840625 Z M21.9951563,32.2840625 L28.538125,32.2840625 L28.538125,22.0301562 L28.4209375,21.9910937 L27.9521875,22.8114062 L21.9951563,32.2840625 Z" id="4" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

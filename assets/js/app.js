@@ -222,6 +222,9 @@ $(document).ready(function(){
       // rocket ship animation
       var rocketShipImageAnim = new TimelineMax()
       rocketShipImageAnim
+        .set('#ship', {
+          x: 46
+        })
         .to('#ship', 0.5, {
           y: '15px'
         })

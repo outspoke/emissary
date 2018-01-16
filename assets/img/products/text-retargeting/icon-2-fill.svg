@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.2 56.2"><defs><style>.cls-1{opacity:0.15;}.cls-2{fill:#525565;}.cls-3{fill:none;}.cls-4{isolation:isolate;font-size:40px;fill:#fff;font-family:RobotoSlab-Bold, Roboto Slab;font-weight:700;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-1"><circle class="cls-2" cx="28.1" cy="28.1" r="28.1"/><path class="cls-3" d="M10.6,12.2h35V45.7h-35Z"/><text class="cls-4" transform="translate(17.05 41.87)">2</text></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="29px" viewBox="0 0 20 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.15">
+        <g id="icon-2-fill" transform="translate(-18.000000, -14.000000)" fill="#FFFFFF">
+            <g id="Group">
+                <path d="M18.4757813,42.87 L18.4757813,39.1395312 L27.675,29.27625 C29.0031316,27.7528049 29.9471326,26.4670104 30.5070313,25.4188281 C31.0669299,24.3706458 31.346875,23.3973482 31.346875,22.4989062 C31.346875,21.3009836 31.0246126,20.3211757 30.3800781,19.5594531 C29.7355437,18.7977306 28.8208393,18.416875 27.6359375,18.416875 C26.3208268,18.416875 25.3214878,18.8628341 24.6378906,19.7547656 C23.9542935,20.6466972 23.6125,21.8348363 23.6125,23.3192187 L18.065625,23.3192187 L18.0265625,23.2020312 C17.961458,20.6369143 18.8045485,18.465712 20.5558594,16.6883594 C22.3071702,14.9110067 24.6671727,14.0223437 27.6359375,14.0223437 C30.5656396,14.0223437 32.8703041,14.7840549 34.55,16.3075 C36.2296959,17.8309451 37.0695312,19.8621748 37.0695312,22.40125 C37.0695312,24.1200086 36.5975308,25.7085344 35.6535156,27.166875 C34.7095005,28.6252156 33.1437609,30.5262383 30.95625,32.87 L25.8976563,38.3973437 L25.9367188,38.495 L33.3195312,38.495 L33.5539062,35.6825 L37.8898437,35.6825 L37.8898437,42.87 L18.4757813,42.87 Z" id="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
