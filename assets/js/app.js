@@ -154,7 +154,7 @@ $(document).ready(function(){
       })
       .setTween(
         TweenMax.from($stepNumIcon[0], 0.5, {
-          backgroundPosition: "0 80%"
+          backgroundPosition: "5% 80%"
         })
       )
       .addTo(controller);
