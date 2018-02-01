@@ -213,7 +213,8 @@ h2 {
     background: linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
   }
 
-  .hero.alt {
+  .hero.alt,
+  .cta.alt {
     h1 {
       font-size: 60px;
     }
