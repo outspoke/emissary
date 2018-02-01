@@ -122,8 +122,13 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6,scrollmagic@2.0.5(ScrollMagic.min.js+plugins/animation.gsap.min.js),gsap@1.19.1,jquery.slick@1.6.0"></script>
+
+    <!-- Clip Path Polyfill -->
     <script src="https://cdn.jsdelivr.net/npm/clip-path@1/dist/clippath.min.js"></script>
+    <svg width="0" height="0"><clipPath id="hero-clip-path"><polygon></polygon></clipPath></svg>
+    <!-- Dev Dependencies -->
+    <script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tether@1.4.0,bootstrap@4.0.0-alpha.6,scrollmagic@2.0.5(ScrollMagic.min.js+plugins/animation.gsap.min.js),gsap@1.19.1,jquery.slick@1.6.0"></script>
+    <!-- Main app.js -->
     <script src="{{ "/assets/js/app.js" | relative_url }}"></script>
 
   </body>

@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // clip-path polyfill for home page header
-  ClipPath('.hero', '0 0, 100% 0, 100% 80%, 0 100%');
+  ClipPath('.hero', '0% 0%, 100% 0%, 100% 80%, 0% 100%', 'hero-clip-path');
 
   // Init Bootstrap elements
   $('[data-toggle="tooltip"]').tooltip();
