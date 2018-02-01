@@ -162,7 +162,8 @@ h2 {
 .primary-content {
   padding-top: 7%;
 }
-.hero {
+.hero,
+.cta.alt {
   padding: 20vh 0;
   background: url(../img/hero-bg-mobile.png),
               linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
@@ -198,8 +199,15 @@ h2 {
     }
   }
 }
+.hero.alt {
+  background: linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
+}
+.cta.alt {
+  clip-path: none;
+}
 @include media-breakpoint-up(lg) {
-  .hero {
+  .hero,
+  .cta.alt {
     background: linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
   }
 }
@@ -863,7 +871,7 @@ h3.callout-headline {
     @media screen and (max-width: 390px) {
       min-width: initial;
     }
-    
+
     @media screen and (max-width: 414px) {
       > svg {
         max-width: 100%;
