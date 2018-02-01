@@ -164,6 +164,7 @@ h2 {
 }
 .hero,
 .cta.alt {
+  margin-bottom: 6%;
   padding: 20vh 0;
   background: url(../img/hero-bg-mobile.png),
               linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
@@ -204,11 +205,23 @@ h2 {
 }
 .cta.alt {
   clip-path: none;
+  margin-bottom: 0;
 }
 @include media-breakpoint-up(lg) {
   .hero,
   .cta.alt {
     background: linear-gradient(to bottom, darken($brand-primary, 15%) 5%, lighten($brand-primary, 1%) 75%);
+  }
+
+  .hero.alt {
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.8;
+    }
   }
 }
 

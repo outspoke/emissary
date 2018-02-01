@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  // clip-path polyfill for home page header
+  ClipPath('.hero', '0 0, 100% 0, 100% 80%, 0 100%');
+
   // Init Bootstrap elements
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
@@ -199,7 +202,7 @@ $(document).ready(function(){
           y: 14
         });
       new ScrollMagic.Scene({
-        triggerElement: '#desktop-web-image', 
+        triggerElement: '#desktop-web-image',
         triggerHook: 0.75,
         offset: 150
       })
@@ -216,25 +219,25 @@ $(document).ready(function(){
           y: '15px'
         })
       new ScrollMagic.Scene({
-        triggerElement: '#step-3', 
+        triggerElement: '#step-3',
         offset: 100
       })
       .setTween(rocketShipImageAnim)
       .addTo(controller);
-      
+
       var rocketSmokeImageAnim = new TimelineMax({ repeat: -1 })
       rocketSmokeImageAnim
         .to('#smoke', 0.5, {
           y: '-0.96'
         });
       new ScrollMagic.Scene({
-        triggerElement: '#ship', 
+        triggerElement: '#ship',
         triggerHook: 0.75,
         offset: 100
       })
       .setTween(rocketSmokeImageAnim)
       .addTo(controller);
-      
+
       var rocketstarsImageAnim = new TimelineMax({ repeat: -1 })
       rocketstarsImageAnim
         .to('#stars', 0.5, {
@@ -244,7 +247,7 @@ $(document).ready(function(){
           y: '-0.96'
         }, '-=0.5');
       new ScrollMagic.Scene({
-        triggerElement: '#ship', 
+        triggerElement: '#ship',
         triggerHook: 0.75,
         offset: 50
       })
@@ -252,7 +255,7 @@ $(document).ready(function(){
       .addTo(controller);
 
     });
-    
+
 
     // smooth scroll
     // Select all links with hashes
@@ -263,8 +266,8 @@ $(document).ready(function(){
     .click(function(event) {
       // On-page links
       if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
         location.hostname == this.hostname
       ) {
         // Figure out element to scroll to
@@ -294,5 +297,5 @@ $(document).ready(function(){
 
 
   }
-  
+
 });
