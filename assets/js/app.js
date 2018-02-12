@@ -44,16 +44,11 @@ $(document).ready(function(){
     }, '+=' + (Math.random() * 1.5).toFixed(2));
   });
   // Starship fade in
-  if($('#starship').length) {
-    TweenMax.set('#starship', {
-      opacity: 0,
-      y: '20%',
-    });
-    TweenMax.to('#starship', 1.5, {
-      opacity: 1,
+  if($('#starship #ship').length) {
+    TweenMax.to('#starship #ship', 4, {
       y: '0%',
-      delay: 0.3,
-      ease: Power2.easeOut,
+      delay: 0.1,
+      ease: Power2.easeInOut,
     });
   }
 

@@ -1033,23 +1033,26 @@ h3.callout-headline {
 
 .space-animation {
   position: relative;
-}
 
-#starfield-svg {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -60%) scale(1.5);
-  z-index: 0;
+  #starfield-svg {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%) scale(1.5);
+    z-index: 0;
 
-  path[class^='star'] {
-    opacity: 0;
+    path[class^='star'] {
+      opacity: 0;
+    }
   }
-}
 
-#starship {
-  opacity: 0;
-  z-index: 1;
-  position: relative;
+  #starship {
+    // opacity: 0;
+    // z-index: 1;
+    width: 100%;
+    height: auto;
+    position: relative;
+    max-width: 100% !important;
+  }
 }
