@@ -1037,4 +1037,12 @@ h3.callout-headline {
   width: 42%;
   right: -3%;
   top: -22%;
+
+  path[class^='star'] {
+    opacity: 0;
+  }
+}
+
+#starship {
+  opacity: 0;
 }

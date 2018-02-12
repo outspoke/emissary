@@ -30,6 +30,35 @@ $(document).ready(function(){
   // Scroll animations
   var controller = new ScrollMagic.Controller();
 
+  // Home Page Header Animations
+  // Randomized star twinkles
+  $('#starfield-svg path[class^=star]').each(function(i, starPath){
+    new TimelineMax({repeat: -1})
+    .to(starPath, (Math.random() * 3 + 1).toFixed(2), {
+      opacity: 1,
+      ease: Power2.easeInOut,
+    }, '+=' + (Math.random() * 1.5).toFixed(2))
+    .to(starPath, (Math.random() * 3 + 1).toFixed(2), {
+      opacity: 0,
+      ease: Power2.easeInOut,
+    }, '+=' + (Math.random() * 1.5).toFixed(2));
+  });
+  // Starship fade in
+  if($('#starship').length) {
+    TweenMax.set('#starship', {
+      opacity: 0,
+      y: '20%',
+    });
+    TweenMax.to('#starship', 1.5, {
+      opacity: 1,
+      y: '0%',
+      delay: 0.3,
+      ease: Power2.easeOut,
+    });
+  }
+
+
+
   // Top Bar Nav BG + Shadow
   new ScrollMagic.Scene({
     offset: '1px'
