@@ -161,8 +161,8 @@ permalink: /home-new/
 
 <!-- CTA -->
 <div class="container">
-  <div class="cta alt text-white text-center text-lg-left rounded bg-primary p-5">
-    <div class="row">
+  <div class="cta alt text-white text-center rounded bg-primary p-5">
+    <div class="row justify-content-center">
       <div class="col-lg-6 ">
         <h1 class="mb-4">Connect when it counts</h1>
         <p class="mb-4">
@@ -174,7 +174,7 @@ permalink: /home-new/
         </p>
       </div>
     </div>
-    <div class="video hidden-md-down">
+    <div class="alt video hidden-md-down">
       <div class="home-slider" id="homeSlider">
         {% assign slides = site.static_files | where: "home-slide", true %}
         {% for slide in slides %}
