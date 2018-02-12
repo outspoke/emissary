@@ -1031,12 +1031,17 @@ h3.callout-headline {
 }
 
 
+.space-animation {
+  position: relative;
+}
 
 #starfield-svg {
   position: absolute;
-  width: 42%;
-  right: -3%;
-  top: -22%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%) scale(1.5);
+  z-index: 0;
 
   path[class^='star'] {
     opacity: 0;
@@ -1045,4 +1050,6 @@ h3.callout-headline {
 
 #starship {
   opacity: 0;
+  z-index: 1;
+  position: relative;
 }
