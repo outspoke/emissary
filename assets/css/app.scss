@@ -1074,7 +1074,14 @@ h3.callout-headline {
     max-width: 100% !important;
   }
 
-  @media only screen and (max-width: 768px) {
-    padding-top: 8em;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-header {
+    padding: 16.5vh 0 20vh;
+  }
+  .space-animation {
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
