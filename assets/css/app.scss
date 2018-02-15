@@ -39,10 +39,20 @@ h2 {
   .navbar {
     max-width: 1600px;
     margin: 0 auto;
-    background-color: rgba($brand-primary, 1);
+    // background-color: rgba($brand-primary, 1);
+    background-color: rgba(#963a36, 1);
   }
   &:not(.transparent) {
     height: 104px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      background-color: rgba(#963a36, 1);
+    }
+    &:not(.transparent) {
+      height: auto;
+    }
   }
 
   .navbar-brand {
@@ -1054,6 +1064,10 @@ h3.callout-headline {
     height: auto;
     position: relative;
     max-width: 100% !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-top: 8em;
   }
 }
 

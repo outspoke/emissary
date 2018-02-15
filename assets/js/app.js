@@ -301,11 +301,12 @@ $(document).ready(function(){
       .addTo(controller);
 
       var rocketstarsImageAnim = new TimelineMax({ repeat: -1 })
+      TweenMax.set('#ship', { transformOrigin: 'center' });
       rocketstarsImageAnim
-        .to('#stars', 0.5, {
+        .to('#stars', 1, {
           y: '1px'
         })
-        .to('#stars', 0.5, {
+        .to('#stars', 1, {
           y: '-0.96'
         }, '-=0.5');
       new ScrollMagic.Scene({
