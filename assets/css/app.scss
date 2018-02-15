@@ -39,20 +39,11 @@ h2 {
   .navbar {
     max-width: 1600px;
     margin: 0 auto;
-    // background-color: rgba($brand-primary, 1);
-    background-color: rgba(#963a36, 1);
+    background-color: rgba($brand-primary, 1);
+    // background-color: rgba(#963a36, 1);
   }
   &:not(.transparent) {
     height: 104px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .navbar {
-      background-color: rgba(#963a36, 1);
-    }
-    &:not(.transparent) {
-      height: auto;
-    }
   }
 
   .navbar-brand {
@@ -93,6 +84,13 @@ h2 {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  body.home .primary-nav.transparent .navbar {
+    background-color: rgba(#973c38, 1);
+  }
+}
+
 .navbar {
   font-size: 18px;
   font-weight: 400;
@@ -986,7 +984,7 @@ h3.callout-headline {
 .cta-1 {
   padding: 3rem 2rem;
   border-radius: 10px 10px 0 0;
-  background: rgba(#c25b56, 1);
+  background: rgba($brand-primary, 1);
   text-align: center;
   h3 {
     font-weight: 500;
