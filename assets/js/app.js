@@ -45,6 +45,7 @@ $(document).ready(function(){
   });
   // Starship fade in
   if($('#starship #ship').length) {
+    TweenMax.set('#starship #ship', { x: 46 });
     TweenMax.to('#starship #ship', 4, {
       y: '0%',
       delay: 0.1,
@@ -278,6 +279,7 @@ $(document).ready(function(){
           x: 46
         })
         .to('#ship', 0.5, {
+          x: 46,
           y: '15px'
         })
       new ScrollMagic.Scene({
@@ -301,12 +303,11 @@ $(document).ready(function(){
       .addTo(controller);
 
       var rocketstarsImageAnim = new TimelineMax({ repeat: -1 })
-      TweenMax.set('#ship', { transformOrigin: 'center' });
       rocketstarsImageAnim
-        .to('#stars', 1, {
+        .to('#stars', 0.5, {
           y: '1px'
         })
-        .to('#stars', 1, {
+        .to('#stars', 0.5, {
           y: '-0.96'
         }, '-=0.5');
       new ScrollMagic.Scene({

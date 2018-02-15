@@ -964,6 +964,14 @@ h3.callout-headline {
   }
 }
 
+.managed-chat-primary-content {
+  @media only screen and (max-width: 450px) {
+    .step-img {
+      min-height: auto;
+    }
+  }
+}
+
 .cta-1, .cta-2 {
   margin: 0 auto;
   color: #fff;
@@ -1068,13 +1076,5 @@ h3.callout-headline {
 
   @media only screen and (max-width: 768px) {
     padding-top: 8em;
-  }
-}
-
-.managed-chat-primary-content {
-  @media only screen and (max-width: 450px) {
-    .step-img {
-      min-height: auto;
-    }
   }
 }
