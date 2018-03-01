@@ -225,16 +225,82 @@ $(document).ready(function(){
       )
       .addTo(controller);
 
-      // desktop modal animation
+      // // desktop modal animation
+      // var screenshotImageAnim = new TimelineMax()
+      // screenshotImageAnim
+      //   .to('#screenshot-image-overlay', 0.5, {
+      //     opacity: 0.5
+      //   }).to('#screenshot-image-modal', 0.5, {
+      //     opacity: 1
+      //   });
+      // new ScrollMagic.Scene({
+      //   triggerElement: '#screenshot-image',
+      //   triggerHook: 0.75,
+      //   offset: 100
+      // })
+      // .setTween(screenshotImageAnim)
+      // .addTo(controller);
+
+      // chat by text animation
       var screenshotImageAnim = new TimelineMax()
       screenshotImageAnim
-        .to('#screenshot-image-overlay', 0.5, {
-          opacity: 0.5
-        }).to('#screenshot-image-modal', 0.5, {
+        .to('#chatbytext', 0.5, {
           opacity: 1
         });
       new ScrollMagic.Scene({
         triggerElement: '#screenshot-image',
+        triggerHook: 0.75,
+        offset: 100
+      })
+      .setTween(screenshotImageAnim)
+      .addTo(controller);
+
+      // desktop modal animation 2
+      var screenshotImageAnim = new TimelineMax()
+      screenshotImageAnim
+        .to('#recruiter-chat #avatar-mask', 1, {
+          opacity: 0
+        }).to('#recruiter-chat #chat-bubble', 1, {
+          opacity: 1
+        }, '-=0.5');
+      new ScrollMagic.Scene({
+        triggerElement: '#recruiter-chat',
+        triggerHook: 0.75,
+        offset: 100
+      })
+      .setTween(screenshotImageAnim)
+      .addTo(controller);
+
+      // clock fade in (only)
+      var screenshotImageAnim = new TimelineMax()
+      screenshotImageAnim
+        .to('#clock', 0.5, {
+          opacity: 1
+        });
+      new ScrollMagic.Scene({
+        triggerElement: '#clock',
+        triggerHook: 0.75,
+        offset: 100
+      })
+      .setTween(screenshotImageAnim)
+      .addTo(controller);
+
+      // desktop - click
+      var screenshotImageAnim = new TimelineMax()
+      screenshotImageAnim
+        .to('#desktop-user-interact', 0.5, {
+          opacity: 1
+        })
+        .to('#desktop-user-interact #mouse-pointer', 0.5, {
+          x: -94,
+          y: -14,
+          delay: 0.5
+        })
+        .to('#desktop-user-interact #button', 0.1, {
+          opacity: 1
+        });
+      new ScrollMagic.Scene({
+        triggerElement: '#desktop-user-interact',
         triggerHook: 0.75,
         offset: 100
       })

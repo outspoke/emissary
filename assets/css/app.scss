@@ -1083,3 +1083,29 @@ h3.callout-headline {
     margin: 0 auto;
   }
 }
+
+
+// Clock animation
+#clock {
+  #clock-hands {
+    #second, #minute, #hour {
+      transform-origin: 12px 66px 0px;
+    }
+    #second { animation: spinClockSecondHand 15s linear infinite forwards; }
+    #minute { animation: spinClockMinuteHand 900s linear infinite forwards; }
+    #hour { animation: spinClockHourHand 5400s linear infinite forwards; }
+  }
+}
+
+@keyframes spinClockSecondHand {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@keyframes spinClockMinuteHand {
+  0% { transform: rotateZ(120deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@keyframes spinClockHourHand {
+  0% { transform: rotateZ(45deg); }
+  100% { transform: rotateZ(360deg); }
+}
