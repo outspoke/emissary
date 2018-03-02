@@ -5,17 +5,21 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="clock" opacity="0">
-            <g id="clock-face" fill-rule="nonzero">
-                <circle id="Oval" fill="#555554" cx="82.2786585" cy="82.2786585" r="82.2786585"></circle>
-                <circle id="Oval" fill="#FFFFFF" cx="82.2786585" cy="82.2786585" r="79.1295732"></circle>
-                <path d="M82.2786585,17.5564024 L82.2786585,30.504878 M82.2786585,134.052439 L82.2786585,146.990854 M17.5564024,82.2786585 L30.504878,82.2786585 M134.052439,82.2786585 L146.990854,82.2786585 M128.035976,36.5112805 L118.880488,45.6667683 M45.6667683,118.890549 L36.5112805,128.035976 M36.5112805,36.5112805 L45.6667683,45.6667683 M118.880488,118.890549 L128.035976,128.035976" id="Shape" stroke="#555554" stroke-width="4.32" fill="#FFFFFF" stroke-linecap="round"></path>
-            </g>
-            <g id="clock-hands" transform="translate(70.390244, 17.250000)">
-                <circle id="center" fill="#CC6666" fill-rule="nonzero" cx="12.6128049" cy="65.7530488" r="12.5762195"></circle>
-                <path d="M12.1097561,65.25 L12.1097561,0.25" id="second" stroke="#97C0CE" stroke-width="7" stroke-linecap="round"></path>
-                <path d="M12.1097561,65.25 L12.1097561,12.75" id="minute" stroke="#555554" stroke-width="7" stroke-linecap="round"></path>
-                <path d="M12.1097561,45.75 L12.1097561,65.25" id="hour" stroke="#555554" stroke-width="7" stroke-linecap="round"></path>
+        <g id="clock">
+            <g>
+                <g id="clock-face" fill-rule="nonzero">
+                    <circle id="Oval" fill="#555554" cx="82.2786585" cy="82.2786585" r="82.2786585"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="82.2786585" cy="82.2786585" r="79.1295732"></circle>
+                    <path d="M147.998173,82 L82,82 L82,16 C118.330867,16.2675351 147.731622,45.6688988 147.998173,82 Z" id="passage" fill-opacity="0.297469429" fill="#97C0CE"></path>
+                    <path d="M147.998173,82 L82,82 L82,16 C118.330867,16.2675351 147.731622,45.6688988 147.998173,82 Z" id="passage-mask" fill="#FFFFFF"></path>
+                    <path d="M82.2786585,17.5564024 L82.2786585,30.504878 M82.2786585,134.052439 L82.2786585,146.990854 M17.5564024,82.2786585 L30.504878,82.2786585 M134.052439,82.2786585 L146.990854,82.2786585 M128.035976,36.5112805 L118.880488,45.6667683 M45.6667683,118.890549 L36.5112805,128.035976 M36.5112805,36.5112805 L45.6667683,45.6667683 M118.880488,118.890549 L128.035976,128.035976" id="Shape" stroke="#555554" stroke-width="4.32" fill="#FFFFFF" stroke-linecap="round"></path>
+                </g>
+                <g id="clock-hands" transform="translate(70.390244, 17.250000)">
+                    <circle id="center" fill="#CC6666" fill-rule="nonzero" cx="12.6128049" cy="65.7530488" r="12.5762195"></circle>
+                    <path d="M12.1097561,65.25 L12.1097561,0.25" id="second" stroke="#97C0CE" stroke-width="7" stroke-linecap="round"></path>
+                    <path d="M12.1097561,65.25 L12.1097561,12.75" id="minute" stroke="#555554" stroke-width="7" stroke-linecap="round"></path>
+                    <path d="M12.1097561,45.75 L12.1097561,65.25" id="hour" stroke="#555554" stroke-width="7" stroke-linecap="round"></path>
+                </g>
             </g>
         </g>
     </g>

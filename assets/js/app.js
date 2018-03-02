@@ -271,11 +271,15 @@ $(document).ready(function(){
       .setTween(screenshotImageAnim)
       .addTo(controller);
 
-      // clock fade in (only)
+      // clock fade
       var screenshotImageAnim = new TimelineMax()
       screenshotImageAnim
         .to('#clock', 0.5, {
-          opacity: 1
+          opacity: 1,
+          onComplete: function() {
+            console.log('complete');
+            $('#clock-hands').addClass('animated')
+          }
         });
       new ScrollMagic.Scene({
         triggerElement: '#clock',
@@ -297,8 +301,19 @@ $(document).ready(function(){
           delay: 0.5
         })
         .to('#desktop-user-interact #button', 0.1, {
-          opacity: 1
-        });
+          opacity: 0.8
+        })
+        .to('#desktop-user-interact #button', 0.1, {
+          opacity: '1',
+          scale: 0.9,
+          delay: 0.5
+        })
+        .to('#desktop-user-interact #button', 0.1, {
+          opacity: '1',
+          scale: 1,
+          delay: 0.05
+        })
+        ;
       new ScrollMagic.Scene({
         triggerElement: '#desktop-user-interact',
         triggerHook: 0.75,
