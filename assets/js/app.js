@@ -225,26 +225,12 @@ $(document).ready(function(){
       )
       .addTo(controller);
 
-      // // desktop modal animation
-      // var screenshotImageAnim = new TimelineMax()
-      // screenshotImageAnim
-      //   .to('#screenshot-image-overlay', 0.5, {
-      //     opacity: 0.5
-      //   }).to('#screenshot-image-modal', 0.5, {
-      //     opacity: 1
-      //   });
-      // new ScrollMagic.Scene({
-      //   triggerElement: '#screenshot-image',
-      //   triggerHook: 0.75,
-      //   offset: 100
-      // })
-      // .setTween(screenshotImageAnim)
-      // .addTo(controller);
-
-      // chat by text animation
+      // desktop modal animation
       var screenshotImageAnim = new TimelineMax()
       screenshotImageAnim
-        .to('#chatbytext', 0.5, {
+        .to('#screenshot-image-overlay', 0.5, {
+          opacity: 0.5
+        }).to('#screenshot-image-modal', 0.5, {
           opacity: 1
         });
       new ScrollMagic.Scene({
@@ -255,9 +241,23 @@ $(document).ready(function(){
       .setTween(screenshotImageAnim)
       .addTo(controller);
 
+      // chat by text animation
+      var chatByTextAnim = new TimelineMax()
+      chatByTextAnim
+        .to('#chatbytext', 0.5, {
+          opacity: 1
+        });
+      new ScrollMagic.Scene({
+        triggerElement: '#screenshot-image',
+        triggerHook: 0.75,
+        offset: 100
+      })
+      .setTween(chatByTextAnim)
+      .addTo(controller);
+
       // desktop modal animation 2
-      var screenshotImageAnim = new TimelineMax()
-      screenshotImageAnim
+      var recruiterChatAnim = new TimelineMax()
+      recruiterChatAnim
         .to('#recruiter-chat #avatar-mask', 1, {
           opacity: 0
         }).to('#recruiter-chat #chat-bubble', 1, {
@@ -268,17 +268,17 @@ $(document).ready(function(){
         triggerHook: 0.75,
         offset: 100
       })
-      .setTween(screenshotImageAnim)
+      .setTween(recruiterChatAnim)
       .addTo(controller);
 
       // clock fade
-      var screenshotImageAnim = new TimelineMax()
-      screenshotImageAnim
+      var clockAnim = new TimelineMax()
+      clockAnim
         .to('#clock', 0.5, {
           opacity: 1,
           onComplete: function() {
             console.log('complete');
-            $('#clock-hands').addClass('animated')
+            $('#clock').addClass('animated')
           }
         });
       new ScrollMagic.Scene({
@@ -286,12 +286,12 @@ $(document).ready(function(){
         triggerHook: 0.75,
         offset: 100
       })
-      .setTween(screenshotImageAnim)
+      .setTween(clockAnim)
       .addTo(controller);
 
       // desktop - click
-      var screenshotImageAnim = new TimelineMax()
-      screenshotImageAnim
+      var desktopUserInteract = new TimelineMax()
+      desktopUserInteract
         .to('#desktop-user-interact', 0.5, {
           opacity: 1
         })
@@ -319,7 +319,7 @@ $(document).ready(function(){
         triggerHook: 0.75,
         offset: 100
       })
-      .setTween(screenshotImageAnim)
+      .setTween(desktopUserInteract)
       .addTo(controller);
 
       // text message animation
