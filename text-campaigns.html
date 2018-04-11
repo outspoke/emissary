@@ -1,0 +1,133 @@
+---
+layout: default
+permalink: /text-campaigns/
+bodyclass: text-campaigns
+---
+
+<div class="container primary-content text-campaigns-primary-content">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="product">
+        <h1 class="centered-headline mb-5">Stay Connected with <span class="text-red">Text Campaigns</span class="text-red"></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Features -->
+<div class="container mt-5">
+  <div class="row justify-content-md-center features">
+    <div class="col-md-10">
+      <!-- feature: image-left -->
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-left">
+          <div style="background:#eee;width:250px;height:250px;"></div>
+          <!-- <img id="icon1" class="mb-4 mb-md-0" src="{{ "/assets/img/icon1.png" | relative_url }}" /> -->
+        </div>
+        <div class="col-md-8 text-md-right">
+          <h2 class="mb-4">Conduct text based outreach at scale</h2>
+          <p style="font-size: 1.25em;">
+            Campaigns can be large or small, allowing you to achieve more in less time.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-arrow-divider">
+        <a href="#setup-in-minutes">
+          <div class="step-arrow-divider-img">
+            <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+          </div>
+        </a>
+      </div>
+
+      <!-- feature: image right -->
+      <div class="row align-items-center" id="setup-in-minutes">
+        <div class="col-md-4 text-center text-md-right flex-md-last">
+          <div style="background:#eee;width:250px;height:250px;"></div>
+          <!-- <img id="icon2" class="mb-4 mb-md-0" src="{{ "/assets/img/wrench.svg" | relative_url }}" /> -->
+        </div>
+        <div class="col-md-8">
+          <h2 class="mb-4">Personalize your messages</h2>
+          <p style="font-size: 1.25em;">
+            Templates give you the power to make messages personal, while maintaining consistency and streamlining workflow.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-arrow-divider">
+        <a href="#use-existing-tools">
+          <div class="step-arrow-divider-img">
+            <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+          </div>
+        </a>
+      </div>
+
+      <!-- feature: image-left -->
+      <div class="row align-items-center" id="use-existing-tools">
+        <div class="col-md-4 text-center text-md-left">
+          <div style="background:#eee;width:250px;height:250px;"></div>
+          <!-- <img id="icon3" class="mb-4 mb-md-0" src="{{ "/assets/img/integration.svg" | relative_url }}" /> -->
+        </div>
+        <div class="col-md-8 text-md-right">
+          <h2 class="mb-4">Schedule texting campaigns for now or later</h2>
+          <p style="font-size: 1.25em;">
+            You can initiate outreach instantly or set your campaigns to go out in the future, according to your needs.
+          </p>
+        </div>
+      </div>
+      
+      <div class="step-arrow-divider">
+        <a href="#get-help-when-you-need-it">
+          <div class="step-arrow-divider-img">
+            <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+          </div>
+        </a>
+      </div>
+
+      <!-- feature: image right -->
+      <div class="row align-items-center" id="setup-in-minutes">
+        <div class="col-md-4 text-center text-md-right flex-md-last">
+          <div style="background:#eee;width:250px;height:250px;"></div>
+          <!-- <img id="icon2" class="mb-4 mb-md-0" src="{{ "/assets/img/wrench.svg" | relative_url }}" /> -->
+        </div>
+        <div class="col-md-8">
+          <h2 class="mb-4">Import data in seconds</h2>
+          <p style="font-size: 1.25em;">
+              Add data from other sources with a few clicks, so you can maximize your contacts and resources with ease.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="container">
+  <div class="cta alt text-white text-center rounded bg-primary p-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 ">
+        <h1 class="mb-4">Connect when it counts</h1>
+        <p class="mb-4">
+          Join other industry leaders and start engaging candidates more effectively right now.
+        </p>
+        <p>
+          <!-- <a class="btn btn-secondary round-light mb-2" href="">Sign Up</a> -->
+          <a class="btn btn-secondary round-light mb-2" href="mailto:sales@emissary.ai">Learn More</a>
+        </p>
+      </div>
+    </div>
+    <div class="alt video hidden-md-down">
+      <div class="home-slider" id="homeSlider">
+        {% assign slides = site.static_files | where: "home-slide", true %}
+        {% for slide in slides %}
+          <div>
+            <figure style="background-image: url({{ slide.path | relative_url }})"></figure>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
