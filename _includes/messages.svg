@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="personalize-messages-graphic" viewBox="0 0 158 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>messages</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="messages" transform="translate(0.000000, -1.000000)">
+            <g id="messages-browser-window" fill-rule="nonzero">
+                <polygon id="Fill-1" fill="#FFFFFF" points="0 127.265 157.968 127.265 157.968 0.999 0 0.999"></polygon>
+                <polygon id="Path" fill="#525564" points="0 1 0 16 0 22 0 127 158 127 158 1"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="6 121 152 121 152 22 6 22"></polygon>
+                <g id="messages-title-bar" transform="translate(6.000000, 6.265000)">
+                    <polygon id="Path" fill="#FFFFFF" points="0 9.735 146 9.735 146 0.735 0 0.735"></polygon>
+                    <path d="M20.3081,8.0992 C18.8801,8.0992 17.7191,6.9372 17.7191,5.5102 C17.7191,4.0822 18.8801,2.9202 20.3081,2.9202 C21.7361,2.9202 22.8971,4.0822 22.8971,5.5102 C22.8971,6.9372 21.7361,8.0992 20.3081,8.0992" id="Fill-4" fill="#545454"></path>
+                    <path d="M20.3081,4.3326 C19.6591,4.3326 19.1311,4.8606 19.1311,5.5096 C19.1311,6.1586 19.6591,6.6866 20.3081,6.6866 C20.9571,6.6866 21.4851,6.1586 21.4851,5.5096 C21.4851,4.8606 20.9571,4.3326 20.3081,4.3326" id="Fill-6" fill="#CD6666"></path>
+                    <path d="M12.7749,8.0992 C11.3469,8.0992 10.1859,6.9372 10.1859,5.5102 C10.1859,4.0822 11.3469,2.9202 12.7749,2.9202 C14.2029,2.9202 15.3649,4.0822 15.3649,5.5102 C15.3649,6.9372 14.2029,8.0992 12.7749,8.0992" id="Fill-8" fill="#525564"></path>
+                    <path d="M12.7749,4.3326 C12.1259,4.3326 11.5979,4.8606 11.5979,5.5096 C11.5979,6.1586 12.1259,6.6866 12.7749,6.6866 C13.4239,6.6866 13.9519,6.1586 13.9519,5.5096 C13.9519,4.8606 13.4239,4.3326 12.7749,4.3326" id="Fill-10" fill="#97C0CE"></path>
+                    <path d="M5.2422,4.3326 C4.5932,4.3326 4.0652,4.8606 4.0652,5.5096 C4.0652,6.1586 4.5932,6.6866 5.2422,6.6866 C5.8912,6.6866 6.4192,6.1586 6.4192,5.5096 C6.4192,4.8606 5.8912,4.3326 5.2422,4.3326 M5.2422,8.0996 C3.8142,8.0996 2.6522,6.9376 2.6522,5.5096 C2.6522,4.0826 3.8142,2.9196 5.2422,2.9196 C6.6702,2.9196 7.8312,4.0826 7.8312,5.5096 C7.8312,6.9376 6.6702,8.0996 5.2422,8.0996" id="Fill-12" fill="#525564"></path>
+                </g>
+            </g>
+            <g id="messages-content" transform="translate(15.000000, 29.265000)">
+                <g id="message-output" transform="translate(0.000000, 6.000000)" fill="#928F9D" fill-rule="nonzero">
+                    <polygon id="Fill-18-Copy-3" points="0 53 60 53 60 51 0 51"></polygon>
+                    <polygon id="Fill-18-Copy-2" points="0 43 129 43 129 41 0 41"></polygon>
+                    <polygon id="Fill-18-Copy-5" points="0 33 129 33 129 31 0 31"></polygon>
+                    <polygon id="Fill-18-Copy" points="0 12 129 12 129 10 0 10"></polygon>
+                    <polygon id="Fill-18" points="0 2 129 2 129 0 0 0"></polygon>
+                </g>
+                <g id="messages-tpl-output-2" opacity="0" transform="translate(68.000000, 10.735000)">
+                    <g id="path-4-link" transform="translate(2.000000, 2.000000)" fill="#CD6666">
+                        <polygon id="path-4" points="0 8 31 8 31 0 0 0"></polygon>
+                    </g>
+                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="3" points="0.5 11.5 0.5 0.5 34.5 0.5 34.5 11.5"></polygon>
+                </g>
+                <g id="messages-tpl-output-1" opacity="0" transform="translate(11.000000, 0.735000)">
+                    <g id="path-3-link" transform="translate(2.000000, 2.000000)" fill="#CD6666">
+                        <polygon id="path-3" points="0 8 19 8 19 0 0 0"></polygon>
+                    </g>
+                    <polygon id="Shape" stroke="#FFFFFF" stroke-width="3" points="0.5 11.5 0.5 0.5 22.5 0.5 22.5 11.5"></polygon>
+                </g>
+            </g>
+            <g id="messages-edit-pane" opacity="0" transform="translate(4.000000, 61.000000)">
+                <polygon id="Fill-3" fill="#FFFFFF" fill-rule="nonzero" points="2 60.2645 147.968 60.2645 147.968 0.6225 2 0.6225"></polygon>
+                <polygon id="toolbar" fill="#DCDDDE" fill-rule="nonzero" points="2 11 148 11 148 1 2 1"></polygon>
+                <path d="M0,0 L149,0" id="Line" stroke="#525564" stroke-width="2" stroke-linecap="square"></path>
+                <g id="message-input" transform="translate(11.000000, 17.265000)">
+                    <polygon id="Fill-18" fill="#928F9D" fill-rule="nonzero" points="0 6.735 129 6.735 129 4.735 0 4.735"></polygon>
+                    <polygon id="Fill-18-Copy" fill="#928F9D" fill-rule="nonzero" points="0 16.735 129 16.735 129 14.735 0 14.735"></polygon>
+                    <g id="messages-tpl-input-2" opacity="0" transform="translate(68.000000, 10.000000)">
+                        <g id="path-2-link" transform="translate(2.000000, 1.000000)" fill="#CD6666">
+                            <polygon id="path-2" points="0 8.735 31 8.735 31 0.735 0 0.735"></polygon>
+                        </g>
+                        <polygon id="Shape" stroke="#FFFFFF" stroke-width="3" points="0.5 11.235 0.5 0.235 34.5 0.235 34.5 11.235"></polygon>
+                    </g>
+                    <g id="messages-tpl-input-1" opacity="0" transform="translate(11.000000, 0.000000)">
+                        <g id="path-1-link" transform="translate(2.000000, 1.000000)" fill="#CD6666">
+                            <polygon id="path-1" points="0 8.735 19 8.735 19 0.735 0 0.735"></polygon>
+                        </g>
+                        <polygon id="Shape" stroke="#FFFFFF" stroke-width="3" points="0.5 11.235 0.5 0.235 22.5 0.235 22.5 11.235"></polygon>
+                    </g>
+                </g>
+                <path d="M125.374596,44 L136.625404,44 C138.489122,44 140,45.5667241 140,47.5006701 C140,49.4332759 138.489122,51 136.625404,51 L125.374596,51 C123.510878,51 122,49.4332759 122,47.5006701 C122,45.5667241 123.510878,44 125.374596,44" id="button" fill="#97C0CE" fill-rule="nonzero"></path>
+                <path d="M139.385298,53.3742998 C139.455298,53.3282998 139.524298,53.2852998 139.590298,53.2512998 L141.799298,52.1262998 C142.182298,51.9312998 142.166298,51.6452998 141.762298,51.4912998 L133.485298,48.3212998 C133.082298,48.1672998 132.892298,48.3402998 133.062298,48.7052998 L136.558298,56.2072998 C136.729298,56.5722998 137.045298,56.5862998 137.260298,56.2392998 L138.501298,54.2372998 C138.537298,54.1802998 138.583298,54.1192998 138.633298,54.0572998 L141.392298,56.5592998 C141.582298,56.7302998 141.905298,56.7172998 142.112298,56.5282998 C142.321298,56.3402998 142.335298,56.0482998 142.146298,55.8762998 L139.385298,53.3742998 Z" id="cursor" fill="#525564" fill-rule="nonzero" style="opacity:0;"></path>
+            </g>
+        </g>
+    </g>
+</svg>

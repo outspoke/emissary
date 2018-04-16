@@ -400,4 +400,154 @@ $(document).ready(function(){
       .addTo(controller);
     });
   }
+
+  // 1-to-1 Texting
+  
+  // phone links
+  if ($('#phone-links-graphic').length >= 1) {
+    var phoneLinksAnim = new TimelineMax()
+    var $phoneLinksStaggerElements = $('#phone-number-active #phone-link > polygon, #phone-number-active #phone-underline, #phone-number-active #e-logo');
+
+    phoneLinksAnim
+      .set($phoneLinksStaggerElements, { opacity: 0 })
+      .to('#phone-number-active', 0.5, {
+        opacity: 1,
+        delay: 0.125
+      })
+      .staggerTo($phoneLinksStaggerElements, 0.5, {
+        opacity: 1
+      }, '0.125');
+
+    new ScrollMagic.Scene({
+      triggerElement: '#phone-links-graphic',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(phoneLinksAnim)
+    .addTo(controller);
+  }
+
+  // browser extension
+  var $browserExtensionGraphic = $('#browser-extension-graphic');
+  if ($browserExtensionGraphic.length >= 1) {
+    var browserExtensionAnim = new TimelineMax()
+    var $extensionSidebarElements = $('#Group-22, #Group-32, #Group-40');
+
+    browserExtensionAnim
+      .from('#browser-extension-graphic #sidebar', 0.5, { x: '+=20px', delay: 0.5 })
+      .to('#browser-extension-graphic #sidebar', 0.5, { opacity: 1 }, '-=0.25')
+      .staggerFrom($extensionSidebarElements, 0.25, { opacity: 0, y: '-=4px' }, '-0.05');
+
+    new ScrollMagic.Scene({
+      triggerElement: '#browser-extension-graphic',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(browserExtensionAnim)
+    .addTo(controller);
+  }
+
+  // platforms (power plug)
+  var $platforms = $('#platforms');
+  if ($platforms.length >= 1) {
+    var platformsAnim = new TimelineMax()
+
+    platformsAnim
+      .to($platforms, 0.5, { opacity: 1, delay: 0.5 });
+
+    new ScrollMagic.Scene({
+      triggerElement: '#platforms',
+      triggerHook: 0.75,
+      offset: -100
+    })
+    .setTween(platformsAnim)
+    .addTo(controller);
+  }
+
+  // Text Campaigns
+
+  // outreach
+  var $outreachGraphic = $('#outreach-graphic');
+  if ($outreachGraphic.length >= 1) {
+    var outreachAnim = new TimelineMax();
+    var $outreachStaggerElements = $('#map-line-1, #map-bubble-1, #map-line-2, #map-bubble-2, #map-line-3, #map-bubble-3', $outreachGraphic);
+
+    outreachAnim
+      .to($outreachGraphic, 0.5, { opacity: 1, delay: 0.5 })
+      .staggerTo($outreachStaggerElements, 0.5, { opacity: 1 }, '0.125');
+
+    new ScrollMagic.Scene({
+      triggerElement: '#outreach-graphic',
+      triggerHook: 0.75,
+      offset: -100
+    })
+    .setTween(outreachAnim)
+    .addTo(controller);
+  }
+
+  // personalize messages
+  var $personalizeMessagesGraphic = $('#personalize-messages-graphic');
+  if ($personalizeMessagesGraphic.length >= 1) {
+    var personalizeMessagesAnim = new TimelineMax();
+    var $messageVar1 = $('#messages-tpl-input-1, #messages-tpl-output-1');
+    var $messageVar2 = $('#messages-tpl-input-2, #messages-tpl-output-2');
+
+    personalizeMessagesAnim
+      .to($personalizeMessagesGraphic, 0.5, { opacity: 1, delay: 0.5 })
+      .to('#messages-edit-pane', 0.5, { opacity: 1 })
+      .staggerTo([$messageVar1, $messageVar2], 0.5, { opacity: 1 }, 0.5)
+      .staggerTo([$messageVar1, $messageVar2], 1, { scaleX: 0.5 }, 0.5)
+      .staggerTo([$messageVar1, $messageVar2], 1, { scaleX: 1.25 }, 0.5)
+      .staggerTo([$messageVar1, $messageVar2], 1, { scaleX: 1}, 0.5);
+
+    new ScrollMagic.Scene({
+      triggerElement: '#personalize-messages-graphic',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(personalizeMessagesAnim)
+    .addTo(controller);
+  }
+
+  // schedule
+  var $scheduleCampaignsGraphic = $('#schedule-campaigns-graphic');
+  if ($scheduleCampaignsGraphic.length >= 1) {
+    var scheduleCampaignsAnim = new TimelineMax();
+    var $calendarElements = $('#schedule-campaigns-graphic #date-selected, #schedule-campaigns-graphic #date-filled, #schedule-campaigns-graphic #date-time-filled');
+
+    scheduleCampaignsAnim
+      .set('#dates', { opacity: 0 })
+      .from($scheduleCampaignsGraphic, 0.5, { opacity: 0 })
+      .to('#dates', 0.25, { opacity: 1 }, '0.5')
+      .staggerTo($calendarElements, 0.25, { opacity: 1, delay: 0.5 }, '0.75');
+
+    new ScrollMagic.Scene({
+      triggerElement: '#schedule-campaigns-graphic',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(scheduleCampaignsAnim)
+    .addTo(controller);
+  }
+
+  // import data
+  var $importDataGraphic = $('#import-data-graphic');
+  if ($importDataGraphic.length >= 1) {
+    var importDataAnim = new TimelineMax();
+    var $importArrow = $('#arrow', $importDataGraphic);
+
+    importDataAnim
+      .from($importDataGraphic, 0.5, { opacity: 0, y: '20' })
+      .from($importArrow, 0.5, { opacity: 0, y: '20' });
+
+    new ScrollMagic.Scene({
+      triggerElement: '#import-data-graphic',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(importDataAnim)
+    .addTo(controller);
+  }
+  
+  
 });

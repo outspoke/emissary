@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="import-data-graphic" style="max-height:300px" viewBox="0 0 91 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <polygon id="path-1" points="0 176 91 176 91 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="import">
+            <g id="calendar-page">
+                <g id="page" transform="translate(0.000000, 54.000000)">
+                    <path d="M86.353307,122 L4.6456879,122 C2.77816559,122 2.84217094e-14,120.76804 2.84217094e-14,117.375152 L2.84217094e-14,4.62184846 C2.84217094e-14,1.23095964 2.77816559,0 4.6456879,0 L66.1010427,0 L91,24.7711878 L91,117.377152 C91,120.76904 88.2208293,122 86.353307,122" id="Fill-1" fill="#525564"></path>
+                    <path d="M6,113.535048 L6,8.46095736 C6,6 8.39704331,6 8.39704331,6 L61.2996987,6 L61.2996987,26.9520956 C61.2996987,29.5708578 63.9327308,29.5708578 63.9327308,29.5708578 L85,29.5708578 L85,113.538044 C85,116 82.6019525,116 82.6019525,116 L8.39704331,116 C8.39704331,116 6,116 6,113.535048" id="Fill-4" fill="#FFFFFF"></path>
+                </g>
+                <g id="calendar">
+                    <polygon id="Fill-6" fill="#928F9D" points="11 159 79 159 79 102 11 102"></polygon>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-7"></g>
+                    <polygon id="Path" fill="#FFFFFF" points="62 111 75 111 75 106 62 106"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="62 119 75 119 75 114 62 114"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="62 127 75 127 75 122 62 122"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="62 134 75 134 75 129 62 129"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="62 141 75 141 75 136 62 136"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="62 148 75 148 75 143 62 143"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="62 155 75 155 75 150 62 150"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 111 59 111 59 106 46 106"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 119 59 119 59 114 46 114"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 127 59 127 59 122 46 122"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 134 59 134 59 129 46 129"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 141 59 141 59 136 46 136"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 148 59 148 59 143 46 143"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="46 155 59 155 59 150 46 150"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 111 44 111 44 106 31 106"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 119 44 119 44 114 31 114"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 127 44 127 44 122 31 122"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 134 44 134 44 129 31 129"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 141 44 141 44 136 31 136"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 148 44 148 44 143 31 143"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="31 155 44 155 44 150 31 150"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 111 28 111 28 106 15 106"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 119 28 119 28 114 15 114"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 127 28 127 28 122 15 122"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 134 28 134 28 129 15 129"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 141 28 141 28 136 15 136"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 148 28 148 28 143 15 143"></polygon>
+                    <polygon id="Path" fill="#FFFFFF" points="15 155 28 155 28 150 15 150"></polygon>
+                    <polygon id="Fill-8" fill="#97C0CE" points="11 102 79 102 79 94 11 94"></polygon>
+                </g>
+            </g>
+            <g id="arrow" transform="translate(11.000000, 0.000000)" fill="#CD6666">
+                <polygon id="Fill-9" points="68 34.1627836 34 -2.84217094e-14 0 34.1627836 8.46483378 42.668145 28.0142601 23.0261231 28.0142601 66 39.9857399 66 39.9857399 23.0261231 59.5361638 42.668145"></polygon>
+                <polygon id="Fill-10" points="28 72 40 72 40 69 28 69"></polygon>
+                <polygon id="Fill-11" points="28 78 40 78 40 75 28 75"></polygon>
+                <polygon id="Fill-12" points="28 84 40 84 40 81 28 81"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
