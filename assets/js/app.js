@@ -274,7 +274,101 @@ $(document).ready(function(){
     })
     .setTween(desktopUserInteract)
     .addTo(controller);
-    
+
+
+    // desktop website animation
+    var desktopWebImageAnim = new TimelineMax()
+    desktopWebImageAnim
+      .to('#desktop-website', 1, {
+        opacity: 1,
+        y: 14
+      });
+    new ScrollMagic.Scene({
+      triggerElement: '#desktop-web-image',
+      triggerHook: 0.75,
+      offset: 150
+    })
+    .setTween(desktopWebImageAnim)
+    .addTo(controller);
+
+    // rocket ship animation
+    var rocketShipImageAnim = new TimelineMax()
+    rocketShipImageAnim
+      .set('#ship', {
+        x: 46
+      })
+      .to('#ship', 0.5, {
+        x: 46,
+        y: '15px'
+      })
+    new ScrollMagic.Scene({
+      triggerElement: '#step-3',
+      offset: 100
+    })
+    .setTween(rocketShipImageAnim)
+    .addTo(controller);
+
+    var rocketSmokeImageAnim = new TimelineMax({ repeat: -1 })
+    rocketSmokeImageAnim
+      .to('#smoke', 0.5, {
+        y: '-0.96'
+      });
+    new ScrollMagic.Scene({
+      triggerElement: '#ship',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(rocketSmokeImageAnim)
+    .addTo(controller);
+
+    var rocketstarsImageAnim = new TimelineMax({ repeat: -1 })
+    rocketstarsImageAnim
+      .to('#stars', 0.5, {
+        y: '1px'
+      })
+      .to('#stars', 0.5, {
+        y: '-0.96'
+      }, '-=0.5');
+    new ScrollMagic.Scene({
+      triggerElement: '#ship',
+      triggerHook: 0.75,
+      offset: 50
+    })
+    .setTween(rocketstarsImageAnim)
+    .addTo(controller);
+
+    // desktop modal animation
+    var screenshotImageAnim = new TimelineMax()
+    screenshotImageAnim
+      .to('#screenshot-image-overlay', 0.5, {
+        opacity: 0.5
+      }).to('#screenshot-image-modal', 0.5, {
+        opacity: 1
+      });
+    new ScrollMagic.Scene({
+      triggerElement: '#screenshot-image',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(screenshotImageAnim)
+    .addTo(controller);
+
+    // text message animation
+    var mobileImageAnim = new TimelineMax()
+    mobileImageAnim
+      .to('#mobile-phone-avatar', 0.5, {
+        opacity: 1
+      }).to('#mobile-phone-message', 0.5, {
+        opacity: 1
+      }, '-=0.25');
+    new ScrollMagic.Scene({
+      triggerElement: '#mobile-phone-image',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(mobileImageAnim)
+    .addTo(controller);
+
     $('.steps > .step').each(function() {
       var $step = $(this);
       var $stepText = $step.find('.step-text');
@@ -306,103 +400,10 @@ $(document).ready(function(){
       )
       .addTo(controller);
 
-      // desktop modal animation
-      var screenshotImageAnim = new TimelineMax()
-      screenshotImageAnim
-        .to('#screenshot-image-overlay', 0.5, {
-          opacity: 0.5
-        }).to('#screenshot-image-modal', 0.5, {
-          opacity: 1
-        });
-      new ScrollMagic.Scene({
-        triggerElement: '#screenshot-image',
-        triggerHook: 0.75,
-        offset: 100
-      })
-      .setTween(screenshotImageAnim)
-      .addTo(controller);
-
-      // text message animation
-      var mobileImageAnim = new TimelineMax()
-      mobileImageAnim
-        .to('#mobile-phone-avatar', 0.5, {
-          opacity: 1
-        }).to('#mobile-phone-message', 0.5, {
-          opacity: 1
-        }, '-=0.25');
-      new ScrollMagic.Scene({
-        triggerElement: '#mobile-phone-image',
-        triggerHook: 0.75,
-        offset: 100
-      })
-      .setTween(mobileImageAnim)
-      .addTo(controller);
-
-      // desktop website animation
-      var desktopWebImageAnim = new TimelineMax()
-      desktopWebImageAnim
-        .to('#desktop-website', 1, {
-          opacity: 1,
-          y: 14
-        });
-      new ScrollMagic.Scene({
-        triggerElement: '#desktop-web-image',
-        triggerHook: 0.75,
-        offset: 150
-      })
-      .setTween(desktopWebImageAnim)
-      .addTo(controller);
-
-      // rocket ship animation
-      var rocketShipImageAnim = new TimelineMax()
-      rocketShipImageAnim
-        .set('#ship', {
-          x: 46
-        })
-        .to('#ship', 0.5, {
-          x: 46,
-          y: '15px'
-        })
-      new ScrollMagic.Scene({
-        triggerElement: '#step-3',
-        offset: 100
-      })
-      .setTween(rocketShipImageAnim)
-      .addTo(controller);
-
-      var rocketSmokeImageAnim = new TimelineMax({ repeat: -1 })
-      rocketSmokeImageAnim
-        .to('#smoke', 0.5, {
-          y: '-0.96'
-        });
-      new ScrollMagic.Scene({
-        triggerElement: '#ship',
-        triggerHook: 0.75,
-        offset: 100
-      })
-      .setTween(rocketSmokeImageAnim)
-      .addTo(controller);
-
-      var rocketstarsImageAnim = new TimelineMax({ repeat: -1 })
-      rocketstarsImageAnim
-        .to('#stars', 0.5, {
-          y: '1px'
-        })
-        .to('#stars', 0.5, {
-          y: '-0.96'
-        }, '-=0.5');
-      new ScrollMagic.Scene({
-        triggerElement: '#ship',
-        triggerHook: 0.75,
-        offset: 50
-      })
-      .setTween(rocketstarsImageAnim)
-      .addTo(controller);
     });
   }
 
   // 1-to-1 Texting
-  
   // phone links
   if ($('#phone-links-graphic').length >= 1) {
     var phoneLinksAnim = new TimelineMax()
