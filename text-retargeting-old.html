@@ -1,0 +1,144 @@
+---
+layout: default
+permalink: /text-retargeting-old/
+---
+
+<div class="container primary-content text-retargeting-primary-content">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+
+        <div class="product">
+            <h1 class="centered-headline" style="margin-bottom:2rem;">Capture More Applicants with <span class="text-red">Text Retargeting</span class="text-red"></h1>
+            <!-- <div class="section product-intro fade-in">
+              <img src="{{ "/assets/img/products/text-retargeting/phone.png" | relative_url }}">
+              <div class="description">
+                <h3>Plug the Mobile Gap</h3>
+                <h4 class="subheading">50%+ of job seekers visit your jobs on a mobile device.</h4 class="subheading">
+                <p>The best ones don't have a resume handy and are not going to peck out an application on a tiny screen... they are going to leave and forget to apply. Emissary closes the loop, bringing them back to apply when the time is right.</p>
+              </div>
+            </div> -->
+            <div class="cta-1 bg-secondary">
+              <h3><u>90-95%</u> of qualified visitors <u>abandon</u> your job before applying...</h3>
+              <h4><strong>Text Retargeting</strong> brings them back to apply later</h4>
+            </div>
+
+            <div class="cta-2">
+              <h2>How it Works</h2>
+            </div>
+
+            <div class="steps">
+              <div id="step-1" class="step row">
+                <div class="step-info bg-icon step-1 col-md-6">
+                  <div class="step-text">
+                    <p>Visitors opt-in to 'apply later' with a mobile number if they don't have time to apply now.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img">
+                    {% include screenshot-opt.svg %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-arrow-divider">
+                <a href="#step-2">
+                  <div class="step-arrow-divider-img">
+                    <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+                  </div>
+                </a>
+              </div>
+
+              <div id="step-2" class="step row">
+                <div class="step-info bg-icon step-2 col-md-6">
+                  <div class="step-text">
+                    <p>Text messages bring the user back to your site.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img">
+                    {% include mobile-phone.svg %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-arrow-divider">
+                <a href="#step-3">
+                  <div class="step-arrow-divider-img">
+                    <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+                  </div>
+                </a>
+              </div>
+
+              <div id="step-3" class="step row">
+                <div class="step-info bg-icon step-3 col-md-6">
+                  <div class="step-text">
+                    <p>Job seekers apply when the time is right.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img">
+                    {% include desktop-user-interact.svg %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-arrow-divider">
+                <a href="#step-4">
+                  <div class="step-arrow-divider-img">
+                    <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+                  </div>
+                </a>
+              </div>
+
+              <div id="step-4" class="step row">
+                <div class="step-info bg-icon step-4  col-md-6">
+                  <div class="step-text">
+                    <p>You hire your next superstar!</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img">
+                    {% include rocket-opt.svg %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="container">
+            <div class="cta alt text-white text-center rounded bg-primary p-5">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <h2 class="mb-4 text-center">Recruit More Effectively <br/>with Text Retargeting</h2>
+                  <p class="mb-4 pb-2">
+                    <ul class="centered-list">
+                      <li class="text-left">20% more applicants to hard to fill positions</li>
+                      <li class="text-left">Lower effective cost per application vs. advertising</li>
+                      <li class="text-left">Builds an opted-in list for future text campaigns</li>
+                    </ul>
+                    <br>
+                  </p>
+                  <p>
+                    <!-- <a class="btn btn-secondary round-light mb-2" href="">Sign Up</a> -->
+                    <a class="btn btn-secondary round-light mb-2" href="mailto:sales@emissary.ai">Learn More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="alt video hidden-md-down">
+                <div class="home-slider" id="homeSlider">
+                  {% assign slides = site.static_files | where: "home-slide", true %}
+                  {% for slide in slides %}
+                    <div>
+                      <figure style="background-image: url({{ slide.path | relative_url }})"></figure>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+

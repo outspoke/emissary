@@ -1,0 +1,132 @@
+---
+layout: default
+permalink: /chat-by-text-old/
+---
+
+<div class="container primary-content managed-chat-primary-content">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+
+        <div class="product">
+            <h1 class="centered-headline" style="margin-bottom:2rem;">Chat by Text</h1>
+            <div class="cta-1 bg-secondary">
+              <h3>Engage Top Talent the Right Way</h3>
+              <h4>Recruit with a Human Touch</h4>
+            </div>
+
+            <div class="cta-2">
+              <h2>How it Works</h2>
+            </div>
+
+            <div class="steps">
+              <div id="step-1" class="step row">
+                <div class="step-info bg-icon step-1 col-md-6">
+                  <div class="step-text">
+                    <p>A 'Chat by Text' button on your jobs prompts visitors to engage.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img d-flex align-content-center justify-content-center p-5">
+                    {% include chatbytext.svg %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-arrow-divider">
+                <a href="#step-2">
+                  <div class="step-arrow-divider-img">
+                    <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+                  </div>
+                </a>
+              </div>
+
+              <div id="step-2" class="step row">
+                <div class="step-info bg-icon step-2 col-md-6">
+                  <div class="step-text">
+                    <p>A recruiter (or Emissary) answers questions, leading more qualified prospects to move ahead.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img">
+                    <!-- <img style="max-width: 75%;padding:1rem 0.5rem;" src="{{ "/assets/img/products/managed-chat/emissary-rep.png" | relative_url }}"> -->
+                    {% include recruiter-chat.svg %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-arrow-divider">
+                <a href="#step-3">
+                  <div class="step-arrow-divider-img">
+                    <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+                  </div>
+                </a>
+              </div>
+
+              <div id="step-3" class="step row">
+                <div class="step-info bg-icon step-3 col-md-6">
+                  <div class="step-text">
+                    <p>Q&amp;A happens over time, making it easy to manage.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img d-flex align-content-center justify-content-center p-5">
+                    {% include clock.svg %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-arrow-divider">
+                <a href="#step-4">
+                  <div class="step-arrow-divider-img">
+                    <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+                  </div>
+                </a>
+              </div>
+
+              <div id="step-4" class="step row">
+                <div class="step-info bg-icon step-4 col-md-6">
+                  <div class="step-text">
+                    <p>The best candidates apply, instead of walking away.</p>
+                  </div>
+                </div>
+                <div class="step-image col-md-6">
+                  <div class="step-img">
+                    {% include desktop-user-interact.svg %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="container">
+            <div class="cta alt text-white text-center rounded bg-primary p-5">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <h2 class="mb-4 text-center">Engage More Effectively</h2>
+                  <p class="mb-4 pb-2">
+                    Real conversations drive real candidate engagement. Chat by Text helps you engage the best candidates efficiently at enterprise scale.
+                  </p>
+                  <p>
+                    <!-- <a class="btn btn-secondary round-light mb-2" href="">Sign Up</a> -->
+                    <a class="btn btn-secondary round-light mb-2" href="mailto:sales@emissary.ai">Learn More</a>
+                  </p>
+                </div>
+              </div>
+              <div class="alt video hidden-md-down">
+                <div class="home-slider" id="homeSlider">
+                  {% assign slides = site.static_files | where: "home-slide", true %}
+                  {% for slide in slides %}
+                    <div>
+                      <figure style="background-image: url({{ slide.path | relative_url }})"></figure>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+</div>
+
