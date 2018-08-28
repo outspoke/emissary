@@ -1,0 +1,130 @@
+---
+layout: default
+permalink: /text-retargeting/
+bodyclass: text-retargeting
+excerpt: Capture more qualified applicants by re-engaging abandoned applications with text messaging
+---
+
+<div class="container primary-content text-retargeting-primary-content">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="product">
+        <h1 class="text-center mb-2">Capture More Applicants with <span class="text-red">Text Retargeting</span class="text-red"></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Features -->
+<div class="container mt-5">
+  <div class="row justify-content-md-center features">
+    <div class="col-md-10">
+
+      <div class="row align-items-center">
+        <div class="col-md-12">
+          <div class="col-md-8 text-center text-md-left mx-auto">
+            <div class="text-center">
+              <h2><u>90-95%</u> of visitors <u>abandon</u> your job before applying...</h2>
+              <p style="font-size: 1.25em;">
+                <strong>Text Retargeting</strong> brings them back to apply later. Capture more qualified applicants by re-engaging abandoned applications with text messaging.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-arrow-divider">
+        <a href="#step-1">
+          <div class="step-arrow-divider-img">
+            <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+          </div>
+        </a>
+      </div>
+
+      <!-- feature: image right -->
+      <div class="row align-items-center" id="step-1">
+        <div class="col-md-4 text-center text-md-left">
+          {% include screenshot-opt.svg %}
+        </div>
+        <div class="col-md-8 py-4 text-center text-md-right">
+          <h2 class="mb-4">Capture more qualified applicants</h2>
+          <p style="font-size: 1.25em;">
+            Reengage the 90-95% of job seekers that leave before applying with opt-in text messages.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-arrow-divider">
+          <a href="#step-2">
+            <div class="step-arrow-divider-img">
+                <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+            </div>
+          </a>
+        </div>
+
+        <!-- feature: image right -->
+        <div class="row align-items-center" id="step-2">
+          <div class="col-md-4 text-center text-md-right flex-md-last">
+            {% include mobile-phone.svg %}
+          </div>
+          <div class="col-md-8 py-4 text-center text-md-left">
+            <h2 class="mb-4">Remind candidates to 'apply later'</h2>
+            <p style="font-size: 1.25em; max-width: 500px;">
+              Automatic text messages bring users back to your site when they're ready to apply. 
+            </p>
+          </div>
+        </div>
+
+      <div class="step-arrow-divider">
+        <a href="#step-3">
+          <div class="step-arrow-divider-img">
+            <img width="25" src="{{ "/assets/img/products/text-retargeting/arrow-down.svg" | relative_url }}">
+          </div>
+        </a>
+      </div>
+
+      <!-- feature: image-left -->
+      <div class="row align-items-center" id="step-3">
+        <div class="col-md-4 text-center text-md-left">
+          {% include rolodex.svg %}
+        </div>
+        <div class="col-md-8 py-4 text-center text-md-right">
+          <h2 class="mb-4">Build targeted contact lists</h2>
+          <p style="font-size: 1.25em;">
+            Job seeker opt-ins create a valuable resource for future recruiting efforts.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="container">
+  <div class="cta alt text-white text-center rounded bg-primary p-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 ">
+        <h1 class="mb-4">Connect when it counts</h1>
+        <p class="mb-4">
+          Join other industry leaders and start engaging candidates more effectively right now.
+        </p>
+        <p>
+          <!-- <a class="btn btn-secondary round-light mb-2" href="">Sign Up</a> -->
+          <a class="btn btn-secondary round-light mb-2" href="mailto:sales@emissary.ai">Learn More</a>
+        </p>
+      </div>
+    </div>
+    <div class="alt video hidden-md-down">
+      <div class="home-slider" id="homeSlider">
+        {% assign slides = site.static_files | where: "home-slide", true %}
+        {% for slide in slides %}
+          <div>
+            <figure style="background-image: url({{ slide.path | relative_url }})"></figure>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

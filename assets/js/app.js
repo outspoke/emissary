@@ -53,6 +53,24 @@ $(document).ready(function(){
     });
   }
 
+  if($('#mobile-phone-image').length) {
+    // text message animation
+    var mobileImageAnim = new TimelineMax()
+    mobileImageAnim
+      .to('#mobile-phone-avatar', 0.5, {
+        opacity: 1
+      }).to('#mobile-phone-message', 0.5, {
+        opacity: 1
+      }, '-=0.25');
+    new ScrollMagic.Scene({
+      triggerElement: '#mobile-phone-image',
+      triggerHook: 0.75,
+      offset: 100
+    })
+    .setTween(mobileImageAnim)
+    .addTo(controller);
+  }
+
 
 
   // Top Bar Nav BG + Shadow
